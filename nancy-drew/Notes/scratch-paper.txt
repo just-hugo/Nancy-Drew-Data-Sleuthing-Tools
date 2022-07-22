@@ -1,0 +1,26 @@
+// What Numbers Do I Need?
+
+    -Yearly murder count: male
+    -Yearly murder count: female
+    -Yearly murder count: trans woman
+    -Yearly murder count: trans man
+    -Yearly murder count: combined trans
+    -Yearly murder count: black male
+    -Yearly murder count: black female
+    -Yearly murder count: combined black
+    -Yearly murder count: total
+    -Yearly murder count: gender nonconforming
+    
+    -Yearly murder per capita rate: male
+    -Yearly per capita rate: female
+    -Yearly per capita rate: trans woman
+    -Yearly per capita rate: trans man
+    -Yearly per capita rate: combined trans
+    -Yearly per capita rate: black male
+    -Yearly per capita rate: black female
+    -Yearly per capita rate: combined black
+    -Yearly per capita rate: total
+
+    -Yearly Hate crime statistics: gay men
+    -Yearly Hate crime statistics: lesbian women
+    -Yearly Hate crime statistics: transgender people

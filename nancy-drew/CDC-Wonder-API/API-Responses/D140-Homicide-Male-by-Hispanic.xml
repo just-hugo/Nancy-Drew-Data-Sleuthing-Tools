@@ -1,0 +1,1785 @@
+<?xml version="1.0"?>
+<page>
+<platform>prod</platform>
+<title>Compressed Mortality, 1999-2016 Results Form</title>
+<default-map/>
+<agreement-signed>true</agreement-signed>
+<dataset code="D140" label="Compressed Mortality, 1999-2016" family="CMF" validatorFamily="" totals="true" vintage-latest="CMF-ICD10" suppress-counts="true" suppress-zeros="true" agreement-required="true">
+	<variable groupby-heading="Locations"/>
+	<variable code="D140.V10" label="Census Regions" type="display-label-code,hier1,related,use-finder" display-code="T-Last" use-finder="true">
+		<other-param-control code="O_county" value="D140.V100"/>
+		<other-param-control code="O_location" value="D140.V10"/>
+		<hier-level code="D140.V10-level1" level="1" label="Census Region" type="geo=region-cens"/>
+		<hier-level code="D140.V10-level2" level="2" label="Census Division" type="geo=division-cens,valuesvary"/>
+		<hier-level code="D140.V10-level3" level="3" label="State" type="geo=state,valuesvary,alias=D140.V9-level1"/>
+		<hier-level code="D140.V10-level4" level="4" label="County" type="geo=county-mort-2014,valuesvary,alias=D140.V9-level2"/>
+	</variable>
+	<variable code="D140.V18" label="HHS Regions" type="hier1,related,use-finder" display-code="F" use-finder="true">
+		<other-param-control code="O_county" value="D140.V100"/>
+		<other-param-control code="O_location" value="D140.V18"/>
+		<hier-level code="D140.V18-level1" level="1" label="HHS Region" type="geo=region-hhs"/>
+		<hier-level code="D140.V18-level2" level="2" label="State" type="geo=state,valuesvary,alias=D140.V9-level1"/>
+		<hier-level code="D140.V18-level3" level="3" label="County" type="geo=county-mort-2014,valuesvary,alias=D140.V9-level2"/>
+	</variable>
+	<variable code="D140.V9" label="States" type="display-label-code,hier1,related,use-finder" display-code="T-Last" use-finder="true">
+		<other-param-control code="O_county" value="D140.V100"/>
+		<other-param-control code="O_location" value="D140.V9"/>
+		<hier-level code="D140.V9-level1" level="1" label="State" type="geo=state,mapvar=D140.V10-level3"/>
+		<hier-level code="D140.V9-level2" level="2" label="County" type="geo=county-mort-2014,valuesvary,mapvar=D140.V10-level4"/>
+	</variable>
+	<variable code="D140.V20" label="2013 CBSA" type="display-label-code,geo=msa2" display-code="T-Last" use-finder="false">
+		<other-param-control code="O_cbsa" value="D140.V20"/>
+		<other-param-control code="O_county" value="D140.V101"/>
+		<value code="10420" label="Akron, OH"/>
+		<value code="10580" label="Albany-Schenectady-Troy, NY"/>
+		<value code="10740" label="Albuquerque, NM"/>
+		<value code="10900" label="Allentown-Bethlehem-Easton, PA-NJ"/>
+		<value code="11100" label="Amarillo, TX"/>
+		<value code="11260" label="Anchorage, AK"/>
+		<value code="11460" label="Ann Arbor, MI"/>
+		<value code="11700" label="Asheville, NC"/>
+		<value code="12060" label="Atlanta-Sandy Springs-Roswell, GA"/>
+		<value code="12100" label="Atlantic City-Hammonton, NJ"/>
+		<value code="12260" label="Augusta-Richmond County, GA-SC"/>
+		<value code="12420" label="Austin-Round Rock, TX"/>
+		<value code="12540" label="Bakersfield, CA"/>
+		<value code="12580" label="Baltimore-Columbia-Towson, MD"/>
+		<value code="12940" label="Baton Rouge, LA"/>
+		<value code="13140" label="Beaumont-Port Arthur, TX"/>
+		<value code="13820" label="Birmingham-Hoover, AL"/>
+		<value code="14260" label="Boise City, ID"/>
+		<value code="14460" label="Boston-Cambridge-Newton, MA-NH"/>
+		<value code="14500" label="Boulder, CO"/>
+		<value code="14740" label="Bremerton-Silverdale, WA"/>
+		<value code="14860" label="Bridgeport-Stamford-Norwalk, CT"/>
+		<value code="15180" label="Brownsville-Harlingen, TX"/>
+		<value code="15380" label="Buffalo-Cheektowaga-Niagara Falls, NY"/>
+		<value code="15940" label="Canton-Massillon, OH"/>
+		<value code="15980" label="Cape Coral-Fort Myers, FL"/>
+		<value code="16300" label="Cedar Rapids, IA"/>
+		<value code="16700" label="Charleston-North Charleston, SC"/>
+		<value code="16740" label="Charlotte-Concord-Gastonia, NC-SC"/>
+		<value code="16860" label="Chattanooga, TN-GA"/>
+		<value code="16980" label="Chicago-Naperville-Elgin, IL-IN-WI"/>
+		<value code="17140" label="Cincinnati, OH-KY-IN"/>
+		<value code="17300" label="Clarksville, TN-KY"/>
+		<value code="17460" label="Cleveland-Elyria, OH"/>
+		<value code="17820" label="Colorado Springs, CO"/>
+		<value code="17900" label="Columbia, SC"/>
+		<value code="17980" label="Columbus, GA-AL"/>
+		<value code="18140" label="Columbus, OH"/>
+		<value code="18580" label="Corpus Christi, TX"/>
+		<value code="19100" label="Dallas-Fort Worth-Arlington, TX"/>
+		<value code="19340" label="Davenport-Moline-Rock Island, IA-IL"/>
+		<value code="19380" label="Dayton, OH"/>
+		<value code="19660" label="Deltona-Daytona Beach-Ormond Beach, FL"/>
+		<value code="19740" label="Denver-Aurora-Lakewood, CO"/>
+		<value code="19780" label="Des Moines-West Des Moines, IA"/>
+		<value code="19820" label="Detroit-Warren-Dearborn, MI"/>
+		<value code="20260" label="Duluth, MN-WI"/>
+		<value code="20500" label="Durham-Chapel Hill, NC"/>
+		<value code="21340" label="El Paso, TX"/>
+		<value code="21500" label="Erie, PA"/>
+		<value code="21660" label="Eugene, OR"/>
+		<value code="21780" label="Evansville, IN-KY"/>
+		<value code="22180" label="Fayetteville, NC"/>
+		<value code="22220" label="Fayetteville-Springdale-Rogers, AR-MO"/>
+		<value code="22420" label="Flint, MI"/>
+		<value code="22660" label="Fort Collins, CO"/>
+		<value code="22900" label="Fort Smith, AR-OK"/>
+		<value code="23060" label="Fort Wayne, IN"/>
+		<value code="23420" label="Fresno, CA"/>
+		<value code="23540" label="Gainesville, FL"/>
+		<value code="24340" label="Grand Rapids-Wyoming, MI"/>
+		<value code="24540" label="Greeley, CO"/>
+		<value code="24580" label="Green Bay, WI"/>
+		<value code="24660" label="Greensboro-High Point, NC"/>
+		<value code="24860" label="Greenville-Anderson-Mauldin, SC"/>
+		<value code="25060" label="Gulfport-Biloxi-Pascagoula, MS"/>
+		<value code="25180" label="Hagerstown-Martinsburg, MD-WV"/>
+		<value code="25420" label="Harrisburg-Carlisle, PA"/>
+		<value code="25540" label="Hartford-West Hartford-East Hartford, CT"/>
+		<value code="25860" label="Hickory-Lenoir-Morganton, NC"/>
+		<value code="26420" label="Houston-The Woodlands-Sugar Land, TX"/>
+		<value code="26580" label="Huntington-Ashland, WV-KY-OH"/>
+		<value code="26620" label="Huntsville, AL"/>
+		<value code="26900" label="Indianapolis-Carmel-Anderson, IN"/>
+		<value code="27140" label="Jackson, MS"/>
+		<value code="27260" label="Jacksonville, FL"/>
+		<value code="28020" label="Kalamazoo-Portage, MI"/>
+		<value code="28140" label="Kansas City, MO-KS"/>
+		<value code="28420" label="Kennewick-Richland, WA"/>
+		<value code="28660" label="Killeen-Temple, TX"/>
+		<value code="28700" label="Kingsport-Bristol-Bristol, TN-VA"/>
+		<value code="28940" label="Knoxville, TN"/>
+		<value code="29180" label="Lafayette, LA"/>
+		<value code="29460" label="Lakeland-Winter Haven, FL"/>
+		<value code="29540" label="Lancaster, PA"/>
+		<value code="29620" label="Lansing-East Lansing, MI"/>
+		<value code="29700" label="Laredo, TX"/>
+		<value code="29820" label="Las Vegas-Henderson-Paradise, NV"/>
+		<value code="30460" label="Lexington-Fayette, KY"/>
+		<value code="30700" label="Lincoln, NE"/>
+		<value code="30780" label="Little Rock-North Little Rock-Conway, AR"/>
+		<value code="31080" label="Los Angeles-Long Beach-Anaheim, CA"/>
+		<value code="31140" label="Louisville/Jefferson County, KY-IN"/>
+		<value code="31180" label="Lubbock, TX"/>
+		<value code="31340" label="Lynchburg, VA"/>
+		<value code="31540" label="Madison, WI"/>
+		<value code="31700" label="Manchester-Nashua, NH"/>
+		<value code="32580" label="McAllen-Edinburg-Mission, TX"/>
+		<value code="32820" label="Memphis, TN-MS-AR"/>
+		<value code="32900" label="Merced, CA"/>
+		<value code="33100" label="Miami-Fort Lauderdale-West Palm Beach, FL"/>
+		<value code="33340" label="Milwaukee-Waukesha-West Allis, WI"/>
+		<value code="33460" label="Minneapolis-St. Paul-Bloomington, MN-WI"/>
+		<value code="33660" label="Mobile, AL"/>
+		<value code="33700" label="Modesto, CA"/>
+		<value code="33860" label="Montgomery, AL"/>
+		<value code="34820" label="Myrtle Beach-Conway-North Myrtle Beach, SC-NC"/>
+		<value code="34940" label="Naples-Immokalee-Marco Island, FL"/>
+		<value code="34980" label="Nashville-Davidson--Murfreesboro--Franklin, TN"/>
+		<value code="35300" label="New Haven-Milford, CT"/>
+		<value code="35380" label="New Orleans-Metairie, LA"/>
+		<value code="35620" label="New York-Newark-Jersey City, NY-NJ-PA"/>
+		<value code="35840" label="North Port-Sarasota-Bradenton, FL"/>
+		<value code="35980" label="Norwich-New London, CT"/>
+		<value code="36100" label="Ocala, FL"/>
+		<value code="36260" label="Ogden-Clearfield, UT"/>
+		<value code="36420" label="Oklahoma City, OK"/>
+		<value code="36500" label="Olympia-Tumwater, WA"/>
+		<value code="36540" label="Omaha-Council Bluffs, NE-IA"/>
+		<value code="36740" label="Orlando-Kissimmee-Sanford, FL"/>
+		<value code="37100" label="Oxnard-Thousand Oaks-Ventura, CA"/>
+		<value code="37340" label="Palm Bay-Melbourne-Titusville, FL"/>
+		<value code="37860" label="Pensacola-Ferry Pass-Brent, FL"/>
+		<value code="37900" label="Peoria, IL"/>
+		<value code="37980" label="Philadelphia-Camden-Wilmington, PA-NJ-DE-MD"/>
+		<value code="38060" label="Phoenix-Mesa-Scottsdale, AZ"/>
+		<value code="38300" label="Pittsburgh, PA"/>
+		<value code="38860" label="Portland-South Portland, ME"/>
+		<value code="38900" label="Portland-Vancouver-Hillsboro, OR-WA"/>
+		<value code="38940" label="Port St. Lucie, FL"/>
+		<value code="39300" label="Providence-Warwick, RI-MA"/>
+		<value code="39340" label="Provo-Orem, UT"/>
+		<value code="39580" label="Raleigh, NC"/>
+		<value code="39740" label="Reading, PA"/>
+		<value code="39900" label="Reno, NV"/>
+		<value code="40060" label="Richmond, VA"/>
+		<value code="40140" label="Riverside-San Bernardino-Ontario, CA"/>
+		<value code="40220" label="Roanoke, VA"/>
+		<value code="40380" label="Rochester, NY"/>
+		<value code="40420" label="Rockford, IL"/>
+		<value code="40900" label="Sacramento--Roseville--Arden-Arcade, CA"/>
+		<value code="41180" label="St. Louis, MO-IL"/>
+		<value code="41420" label="Salem, OR"/>
+		<value code="41500" label="Salinas, CA"/>
+		<value code="41540" label="Salisbury, MD-DE"/>
+		<value code="41620" label="Salt Lake City, UT"/>
+		<value code="41700" label="San Antonio-New Braunfels, TX"/>
+		<value code="41740" label="San Diego-Carlsbad, CA"/>
+		<value code="41860" label="San Francisco-Oakland-Hayward, CA"/>
+		<value code="41940" label="San Jose-Sunnyvale-Santa Clara, CA"/>
+		<value code="42020" label="San Luis Obispo-Paso Robles-Arroyo Grande, CA"/>
+		<value code="42100" label="Santa Cruz-Watsonville, CA"/>
+		<value code="42200" label="Santa Maria-Santa Barbara, CA"/>
+		<value code="42220" label="Santa Rosa, CA"/>
+		<value code="42340" label="Savannah, GA"/>
+		<value code="42540" label="Scranton--Wilkes-Barre--Hazleton, PA"/>
+		<value code="42660" label="Seattle-Tacoma-Bellevue, WA"/>
+		<value code="43340" label="Shreveport-Bossier City, LA"/>
+		<value code="43780" label="South Bend-Mishawaka, IN-MI"/>
+		<value code="43900" label="Spartanburg, SC"/>
+		<value code="44060" label="Spokane-Spokane Valley, WA"/>
+		<value code="44140" label="Springfield, MA"/>
+		<value code="44180" label="Springfield, MO"/>
+		<value code="44700" label="Stockton-Lodi, CA"/>
+		<value code="45060" label="Syracuse, NY"/>
+		<value code="45220" label="Tallahassee, FL"/>
+		<value code="45300" label="Tampa-St. Petersburg-Clearwater, FL"/>
+		<value code="45780" label="Toledo, OH"/>
+		<value code="45940" label="Trenton, NJ"/>
+		<value code="46060" label="Tucson, AZ"/>
+		<value code="46140" label="Tulsa, OK"/>
+		<value code="46520" label="Urban Honolulu, HI"/>
+		<value code="46540" label="Utica-Rome, NY"/>
+		<value code="46700" label="Vallejo-Fairfield, CA"/>
+		<value code="47260" label="Virginia Beach-Norfolk-Newport News, VA-NC"/>
+		<value code="47300" label="Visalia-Porterville, CA"/>
+		<value code="47380" label="Waco, TX"/>
+		<value code="47900" label="Washington-Arlington-Alexandria, DC-VA-MD-WV"/>
+		<value code="48620" label="Wichita, KS"/>
+		<value code="48900" label="Wilmington, NC"/>
+		<value code="49180" label="Winston-Salem, NC"/>
+		<value code="49340" label="Worcester, MA-CT"/>
+		<value code="49620" label="York-Hanover, PA"/>
+		<value code="49660" label="Youngstown-Warren-Boardman, OH-PA"/>
+		<value code="99400" label="small metro"/>
+		<value code="99500" label="micropolitan"/>
+		<value code="99600" label="noncore"/>
+	</variable>
+	<variable code="D140.V21" label="2005 CBSA" type="display-label-code,geo=msa2" display-code="T-Last" use-finder="false">
+		<other-param-control code="O_cbsa" value="D140.V21"/>
+		<other-param-control code="O_county" value="D140.V101"/>
+		<value code="10420" label="Akron, OH"/>
+		<value code="10580" label="Albany-Schenectady-Troy, NY"/>
+		<value code="10740" label="Albuquerque, NM"/>
+		<value code="10900" label="Allentown-Bethlehem-Easton, PA-NJ"/>
+		<value code="11260" label="Anchorage, AK"/>
+		<value code="11460" label="Ann Arbor, MI"/>
+		<value code="11700" label="Asheville, NC"/>
+		<value code="12060" label="Atlanta-Sandy Springs-Marietta, GA"/>
+		<value code="12100" label="Atlantic City, NJ"/>
+		<value code="12260" label="Augusta-Richmond County, GA-SC"/>
+		<value code="12420" label="Austin-Round Rock, TX"/>
+		<value code="12540" label="Bakersfield, CA"/>
+		<value code="12580" label="Baltimore-Towson, MD"/>
+		<value code="12940" label="Baton Rouge, LA"/>
+		<value code="13140" label="Beaumont-Port Arthur, TX"/>
+		<value code="13820" label="Birmingham-Hoover, AL"/>
+		<value code="14260" label="Boise City-Nampa, ID"/>
+		<value code="14460" label="Boston-Cambridge-Quincy, MA-NH"/>
+		<value code="14500" label="Boulder, CO"/>
+		<value code="14860" label="Bridgeport-Stamford-Norwalk, CT"/>
+		<value code="15180" label="Brownsville-Harlingen, TX"/>
+		<value code="15380" label="Buffalo-Niagara Falls, NY"/>
+		<value code="15940" label="Canton-Massillon, OH"/>
+		<value code="15980" label="Cape Coral-Fort Myers, FL"/>
+		<value code="16620" label="Charleston, WV"/>
+		<value code="16700" label="Charleston-North Charleston, SC"/>
+		<value code="16740" label="Charlotte-Gastonia-Concord, NC-SC"/>
+		<value code="16860" label="Chattanooga, TN-GA"/>
+		<value code="16980" label="Chicago-Naperville-Joliet, IL-IN-WI"/>
+		<value code="17140" label="Cincinnati-Middletown, OH-KY-IN"/>
+		<value code="17460" label="Cleveland-Elyria-Mentor, OH"/>
+		<value code="17820" label="Colorado Springs, CO"/>
+		<value code="17900" label="Columbia, SC"/>
+		<value code="17980" label="Columbus, GA-AL"/>
+		<value code="18140" label="Columbus, OH"/>
+		<value code="18580" label="Corpus Christi, TX"/>
+		<value code="19100" label="Dallas-Fort Worth-Arlington, TX"/>
+		<value code="19340" label="Davenport-Moline-Rock Island, IA-IL"/>
+		<value code="19380" label="Dayton, OH"/>
+		<value code="19660" label="Deltona-Daytona Beach-Ormond Beach, FL"/>
+		<value code="19740" label="Denver-Aurora, CO"/>
+		<value code="19780" label="Des Moines-West Des Moines, IA"/>
+		<value code="19820" label="Detroit-Warren-Livonia, MI"/>
+		<value code="20260" label="Duluth, MN-WI"/>
+		<value code="20500" label="Durham, NC"/>
+		<value code="21340" label="El Paso, TX"/>
+		<value code="21500" label="Erie, PA"/>
+		<value code="21660" label="Eugene-Springfield, OR"/>
+		<value code="21780" label="Evansville, IN-KY"/>
+		<value code="22180" label="Fayetteville, NC"/>
+		<value code="22220" label="Fayetteville-Springdale-Rogers, AR-MO"/>
+		<value code="22420" label="Flint, MI"/>
+		<value code="22660" label="Fort Collins-Loveland, CO"/>
+		<value code="22900" label="Fort Smith, AR-OK"/>
+		<value code="23060" label="Fort Wayne, IN"/>
+		<value code="23420" label="Fresno, CA"/>
+		<value code="24340" label="Grand Rapids-Wyoming, MI"/>
+		<value code="24580" label="Green Bay, WI"/>
+		<value code="24660" label="Greensboro-High Point, NC"/>
+		<value code="24860" label="Greenville, SC"/>
+		<value code="25060" label="Gulfport-Biloxi, MS"/>
+		<value code="25420" label="Harrisburg-Carlisle, PA"/>
+		<value code="25540" label="Hartford-West Hartford-East Hartford, CT"/>
+		<value code="25860" label="Hickory-Lenoir-Morganton, NC"/>
+		<value code="26100" label="Holland-Grand Haven, MI"/>
+		<value code="26180" label="Honolulu, HI"/>
+		<value code="26420" label="Houston-Sugar Land-Baytown, TX"/>
+		<value code="26580" label="Huntington-Ashland, WV-KY-OH"/>
+		<value code="26620" label="Huntsville, AL"/>
+		<value code="26900" label="Indianapolis-Carmel, IN"/>
+		<value code="27140" label="Jackson, MS"/>
+		<value code="27260" label="Jacksonville, FL"/>
+		<value code="28020" label="Kalamazoo-Portage, MI"/>
+		<value code="28140" label="Kansas City, MO-KS"/>
+		<value code="28660" label="Killeen-Temple-Fort Hood, TX"/>
+		<value code="28700" label="Kingsport-Bristol-Bristol, TN-VA"/>
+		<value code="28940" label="Knoxville, TN"/>
+		<value code="29460" label="Lakeland, FL"/>
+		<value code="29540" label="Lancaster, PA"/>
+		<value code="29620" label="Lansing-East Lansing, MI"/>
+		<value code="29820" label="Las Vegas-Paradise, NV"/>
+		<value code="30460" label="Lexington-Fayette, KY"/>
+		<value code="30700" label="Lincoln, NE"/>
+		<value code="30780" label="Little Rock-North Little Rock, AR"/>
+		<value code="31100" label="Los Angeles-Long Beach-Santa Ana, CA"/>
+		<value code="31140" label="Louisville-Jefferson County, KY-IN"/>
+		<value code="31180" label="Lubbock, TX"/>
+		<value code="31540" label="Madison, WI"/>
+		<value code="31700" label="Manchester-Nashua, NH"/>
+		<value code="32580" label="McAllen-Edinburg-Mission, TX"/>
+		<value code="32820" label="Memphis, TN-MS-AR"/>
+		<value code="33100" label="Miami-Fort Lauderdale-Miami Beach, FL"/>
+		<value code="33340" label="Milwaukee-Waukesha-West Allis, WI"/>
+		<value code="33460" label="Minneapolis-St. Paul-Bloomington, MN-WI"/>
+		<value code="33660" label="Mobile, AL"/>
+		<value code="33700" label="Modesto, CA"/>
+		<value code="33860" label="Montgomery, AL"/>
+		<value code="34940" label="Naples-Marco Island, FL"/>
+		<value code="34980" label="Nashville-Davidson--Murfreesboro, TN"/>
+		<value code="35300" label="New Haven-Milford, CT"/>
+		<value code="35380" label="New Orleans-Metairie-Kenner, LA"/>
+		<value code="35620" label="New York-Northern New Jersey-Long Island, NY-NJ-PA"/>
+		<value code="35980" label="Norwich-New London, CT"/>
+		<value code="36100" label="Ocala, FL"/>
+		<value code="36260" label="Ogden-Clearfield, UT"/>
+		<value code="36420" label="Oklahoma City, OK"/>
+		<value code="36540" label="Omaha-Council Bluffs, NE-IA"/>
+		<value code="36740" label="Orlando-Kissimmee, FL"/>
+		<value code="37100" label="Oxnard-Thousand Oaks-Ventura, CA"/>
+		<value code="37340" label="Palm Bay-Melbourne-Titusville, FL"/>
+		<value code="37860" label="Pensacola-Ferry Pass-Brent, FL"/>
+		<value code="37900" label="Peoria, IL"/>
+		<value code="37980" label="Philadelphia-Camden-Wilmington, PA-NJ-DE-MD"/>
+		<value code="38060" label="Phoenix-Mesa-Scottsdale, AZ"/>
+		<value code="38300" label="Pittsburgh, PA"/>
+		<value code="38860" label="Portland-South Portland-Biddeford, ME"/>
+		<value code="38900" label="Portland-Vancouver-Beaverton, OR-WA"/>
+		<value code="38940" label="Port St. Lucie-Fort Pierce, FL"/>
+		<value code="39100" label="Poughkeepsie-Newburgh-Middletown, NY"/>
+		<value code="39300" label="Providence-New Bedford-Fall River, RI-MA"/>
+		<value code="39340" label="Provo-Orem, UT"/>
+		<value code="39580" label="Raleigh-Cary, NC"/>
+		<value code="39740" label="Reading, PA"/>
+		<value code="39900" label="Reno-Sparks, NV"/>
+		<value code="40060" label="Richmond, VA"/>
+		<value code="40140" label="Riverside-San Bernardino-Ontario, CA"/>
+		<value code="40220" label="Roanoke, VA"/>
+		<value code="40380" label="Rochester, NY"/>
+		<value code="40420" label="Rockford, IL"/>
+		<value code="40900" label="Sacramento--Arden-Arcade--Roseville, CA"/>
+		<value code="41180" label="St. Louis, MO-IL"/>
+		<value code="41420" label="Salem, OR"/>
+		<value code="41500" label="Salinas, CA"/>
+		<value code="41620" label="Salt Lake City, UT"/>
+		<value code="41700" label="San Antonio, TX"/>
+		<value code="41740" label="San Diego-Carlsbad-San Marcos, CA"/>
+		<value code="41860" label="San Francisco-Oakland-Fremont, CA"/>
+		<value code="41940" label="San Jose-Sunnyvale-Santa Clara, CA"/>
+		<value code="42020" label="San Luis Obispo-Paso Robles, CA"/>
+		<value code="42060" label="Santa Barbara-Santa Maria, CA"/>
+		<value code="42100" label="Santa Cruz-Watsonville, CA"/>
+		<value code="42220" label="Santa Rosa-Petaluma, CA"/>
+		<value code="42260" label="Sarasota-Bradenton-Venice, FL"/>
+		<value code="42340" label="Savannah, GA"/>
+		<value code="42540" label="Scranton--Wilkes-Barre, PA"/>
+		<value code="42660" label="Seattle-Tacoma-Bellevue, WA"/>
+		<value code="43340" label="Shreveport-Bossier City, LA"/>
+		<value code="43780" label="South Bend-Mishawaka, IN-MI"/>
+		<value code="43900" label="Spartanburg, SC"/>
+		<value code="44060" label="Spokane, WA"/>
+		<value code="44140" label="Springfield, MA"/>
+		<value code="44180" label="Springfield, MO"/>
+		<value code="44700" label="Stockton, CA"/>
+		<value code="45060" label="Syracuse, NY"/>
+		<value code="45220" label="Tallahassee, FL"/>
+		<value code="45300" label="Tampa-St. Petersburg-Clearwater, FL"/>
+		<value code="45780" label="Toledo, OH"/>
+		<value code="45940" label="Trenton-Ewing, NJ"/>
+		<value code="46060" label="Tucson, AZ"/>
+		<value code="46140" label="Tulsa, OK"/>
+		<value code="46540" label="Utica-Rome, NY"/>
+		<value code="46700" label="Vallejo-Fairfield, CA"/>
+		<value code="47260" label="Virginia Beach-Norfolk-Newport News, VA-NC"/>
+		<value code="47300" label="Visalia-Porterville, CA"/>
+		<value code="47900" label="Washington-Arlington-Alexandria, DC-VA-MD-WV"/>
+		<value code="48620" label="Wichita, KS"/>
+		<value code="48900" label="Wilmington, NC"/>
+		<value code="49180" label="Winston-Salem, NC"/>
+		<value code="49340" label="Worcester, MA"/>
+		<value code="49620" label="York-Hanover, PA"/>
+		<value code="49660" label="Youngstown-Warren-Boardman, OH-PA"/>
+		<value code="99400" label="small metro"/>
+		<value code="99500" label="micropolitan"/>
+		<value code="99600" label="noncore"/>
+	</variable>
+	<variable code="D140.V22" label="2013 Metro/Nonmetro" type="" display-code="F" use-finder="false">
+		<other-param-control code="O_urban" value="D140.V22"/>
+		<value code="Metro" label="Metro"/>
+		<value code="Nonmetro" label="Nonmetro"/>
+	</variable>
+	<variable code="D140.V23" label="2005 Metro/Nonmetro" type="" display-code="F" use-finder="false">
+		<other-param-control code="O_urban" value="D140.V23"/>
+		<value code="Metro" label="Metro"/>
+		<value code="Nonmetro" label="Nonmetro"/>
+	</variable>
+	<variable code="D140.V19" label="2013 Urbanization" type="" display-code="F" use-finder="false">
+		<other-param-control code="O_urban" value="D140.V22"/>
+		<value code="1" label="Large Central Metro"/>
+		<value code="2" label="Large Fringe Metro"/>
+		<value code="3" label="Medium Metro"/>
+		<value code="4" label="Small Metro"/>
+		<value code="5" label="Micropolitan (Nonmetro)"/>
+		<value code="6" label="NonCore (Nonmetro)"/>
+	</variable>
+	<variable code="D140.V11" label="2006 Urbanization" type="" display-code="F" use-finder="false">
+		<other-param-control code="O_urban" value="D140.V23"/>
+		<value code="1" label="Large Central Metro"/>
+		<value code="2" label="Large Fringe Metro"/>
+		<value code="3" label="Medium Metro"/>
+		<value code="4" label="Small Metro"/>
+		<value code="5" label="Micropolitan (Nonmetro)"/>
+		<value code="6" label="NonCore (Nonmetro)"/>
+	</variable>
+	<variable groupby-heading="endgroup"/>
+	<variable groupby-heading="Years and Demographics"/>
+	<variable code="D140.V5" label="Age Group" type="" display-code="F" use-finder="false">
+		<other-param-control code="O_age" value="D140.V5"/>
+		<value code="1" label="&lt; 1 year"/>
+		<value code="1-4" label="1-4 years"/>
+		<value code="5-9" label="5-9 years"/>
+		<value code="10-14" label="10-14 years"/>
+		<value code="15-19" label="15-19 years"/>
+		<value code="20-24" label="20-24 years"/>
+		<value code="25-34" label="25-34 years"/>
+		<value code="35-44" label="35-44 years"/>
+		<value code="45-54" label="45-54 years"/>
+		<value code="55-64" label="55-64 years"/>
+		<value code="65-74" label="65-74 years"/>
+		<value code="75-84" label="75-84 years"/>
+		<value code="85+" label="85+ years"/>
+		<value code="NS" label="Not Stated"/>
+	</variable>
+	<variable code="D140.V6" label="Infant Age Groups" type="" display-code="F" use-finder="false">
+		<other-param-control code="O_age" value="D140.V6"/>
+		<value code="00" label="All Infant Ages"/>
+		<value code="1d" label="&lt; 1 day"/>
+		<value code="1-6d" label="1-6 days"/>
+		<value code="7-27d" label="7-27 days"/>
+		<value code="28-364d" label="28-364 days"/>
+	</variable>
+	<variable code="D140.V1" label="Year" type="range=1999-2016" display-code="F" use-finder="false">
+		<range>
+			<min code="1999" label="1999"/>
+			<max code="2016" label="2016"/>
+		</range>
+		<value code="1999" label="1999"/>
+		<value code="2000" label="2000"/>
+		<value code="2001" label="2001"/>
+		<value code="2002" label="2002"/>
+		<value code="2003" label="2003"/>
+		<value code="2004" label="2004"/>
+		<value code="2005" label="2005"/>
+		<value code="2006" label="2006"/>
+		<value code="2007" label="2007"/>
+		<value code="2008" label="2008"/>
+		<value code="2009" label="2009"/>
+		<value code="2010" label="2010"/>
+		<value code="2011" label="2011"/>
+		<value code="2012" label="2012"/>
+		<value code="2013" label="2013"/>
+		<value code="2014" label="2014"/>
+		<value code="2015" label="2015"/>
+		<value code="2016" label="2016"/>
+	</variable>
+	<variable code="D140.V7" label="Gender" type="" display-code="F" use-finder="false">
+		<value code="F" label="Female"/>
+		<value code="M" label="Male"/>
+	</variable>
+	<variable code="D140.V8" label="Race" type="" display-code="F" use-finder="false">
+		<value code="1002-5" label="American Indian or Alaska Native"/>
+		<value code="A-PI" label="Asian or Pacific Islander"/>
+		<value code="2054-5" label="Black or African American"/>
+		<value code="2106-3" label="White"/>
+	</variable>
+	<variable code="D140.V17" label="Hispanic Origin" type="" display-code="F" use-finder="false">
+		<value code="2135-2" label="Hispanic or Latino"/>
+		<value code="2186-2" label="Not Hispanic or Latino"/>
+		<value code="NS" label="Not Stated"/>
+	</variable>
+	<variable groupby-heading="endgroup"/>
+	<variable groupby-heading="Cause of Death"/>
+	<variable code="D140.V2" label="ICD-10 Codes" type="display-code-label,hier1,related,select-values=D140.V3,use-finder" display-code="T-First" use-finder="true">
+		<other-param-control code="O_icd" value="D140.V2"/>
+		<hier-level code="D140.V2-level1" level="1" label="ICD Chapter" type=""/>
+		<hier-level code="D140.V2-level2" level="2" label="ICD Sub-Chapter" type="valuesvary"/>
+		<hier-level code="D140.V2-level3" level="3" label="Cause of death" type="valuesvary"/>
+	</variable>
+	<variable code="D140.V4" label="ICD-10 113 Groups" type="hier1,related,use-finder" display-code="F" use-finder="true">
+		<other-param-control code="O_icd" value="D140.V4"/>
+		<hier-level code="D140.V4-level1" level="1" label="ICD 113 Groups" type="valuesvary"/>
+		<hier-level code="D140.V4-level2" level="2" label="Cause of death" type="valuesvary,alias=D140.V2-level3"/>
+	</variable>
+	<variable code="D140.V12" label="Injury Intent" type="" display-code="F" use-finder="false">
+		<other-param-control code="O_icd" value="D140.V12"/>
+		<value code="1" label="Unintentional"/>
+		<value code="2" label="Suicide"/>
+		<value code="3" label="Homicide"/>
+		<value code="4" label="Undetermined "/>
+		<value code="5" label="Legal Intervention / Operations of War"/>
+		<value code="9" label="Non-Injury, no intent classified"/>
+	</variable>
+	<variable code="D140.V13" label="Injury Mechanism &amp; All Other Leading Causes" type="" display-code="F" use-finder="false">
+		<other-param-control code="O_icd" value="D140.V12"/>
+		<value code="GRINJ-001" label="Cut/Pierce"/>
+		<value code="GRINJ-002" label="Drowning"/>
+		<value code="GRINJ-003" label="Fall"/>
+		<value code="GRINJ-004" label="Fire/Flame"/>
+		<value code="GRINJ-005" label="Hot object/Substance"/>
+		<value code="GRINJ-006" label="Firearm"/>
+		<value code="GRINJ-007" label="Machinery"/>
+		<value code="GRINJ-008" label="Motor Vehicle Traffic"/>
+		<value code="GRINJ-009" label="Other Pedal cyclist"/>
+		<value code="GRINJ-010" label="Other Pedestrian"/>
+		<value code="GRINJ-011" label="Other land transport"/>
+		<value code="GRINJ-012" label="Other transport"/>
+		<value code="GRINJ-013" label="Natural/Environmental"/>
+		<value code="GRINJ-014" label="Overexertion"/>
+		<value code="GRINJ-015" label="Poisoning"/>
+		<value code="GRINJ-016" label="Struck by or against"/>
+		<value code="GRINJ-017" label="Suffocation"/>
+		<value code="GRINJ-018" label="Other specified, classifiable Injury"/>
+		<value code="GRINJ-019" label="Other specified, not elsewhere classified Injury"/>
+		<value code="GRINJ-020" label="Unspecified Injury"/>
+		<value code="GR113 001-003" label="Non-Injury: Intestinal infections"/>
+		<value code="GR113 005-006" label="Non-Injury: Tuberculosis"/>
+		<value code="GR113-007" label="Non-Injury: Whooping cough"/>
+		<value code="GR113-008" label="Non-Injury: Scarlet fever and erysipelas"/>
+		<value code="GR113-009" label="Non-Injury: Meningococcal infection"/>
+		<value code="GR113-010" label="Non-Injury: Septicemia"/>
+		<value code="GR113-011" label="Non-Injury: Syphilis"/>
+		<value code="GR113-012" label="Non-Injury: Acute poliomyelitis"/>
+		<value code="GR113-013" label="Non-Injury: Arthropod-borne viral encephalitis"/>
+		<value code="GR113-014" label="Non-Injury: Measles"/>
+		<value code="GR113-015" label="Non-Injury: Viral hepatitis"/>
+		<value code="GR113-016" label="Non-Injury: Human immunodeficiency virus (HIV) disease"/>
+		<value code="GR113-017" label="Non-Injury: Malaria"/>
+		<value code="GR113-018" label="Non-Injury: Other and unspecified infectious and parasitic diseases and their sequelae"/>
+		<value code="GR113 020-043" label="Non-Injury: Malignant neoplasms (Cancers)"/>
+		<value code="GR113-044" label="Non-Injury: In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown behavior"/>
+		<value code="GR113-045" label="Non-Injury: Anemias"/>
+		<value code="GR113-046" label="Non-Injury: Diabetes mellitus"/>
+		<value code="GR113 048-049" label="Non-Injury: Nutritional Deficiencies"/>
+		<value code="GR113-050" label="Non-Injury: Meningitis"/>
+		<value code="GR113-051" label="Non-Injury: Parkinsons disease"/>
+		<value code="GR113-052" label="Non-Injury: Alzheimers disease"/>
+		<value code="GR113 055-068" label="Non-Injury: Diseases of Heart"/>
+		<value code="GR113-069" label="Non-Injury: Essential (primary) hypertension and hypertensive renal disease"/>
+		<value code="GR113-070" label="Non-Injury: Cerebrovascular diseases, including stroke"/>
+		<value code="GR113-071" label="Non-Injury: Atherosclerosis"/>
+		<value code="GR113 073-074" label="Non-Injury: Other diseases of the circulatory system"/>
+		<value code="GR113-075" label="Non-Injury: Other disorders of circulatory system"/>
+		<value code="GR113 077-078" label="Non-Injury: Influenza &amp; Pneumonia"/>
+		<value code="GR113 079" label="Non-Injury: Other acute lower respiratory infections"/>
+		<value code="GR113 082" label="Non-Injury: Chronic lower respiratory diseases"/>
+		<value code="GR113-087" label="Non-Injury: Pneumoconioses and chemical effects"/>
+		<value code="GR113-088" label="Non-Injury: Pneumonitis due to solids and liquids"/>
+		<value code="GR113-089" label="Non-Injury: Other diseases of respiratory system"/>
+		<value code="GR113-090" label="Non-Injury: Peptic ulcer"/>
+		<value code="GR113-091" label="Non-Injury: Diseases of appendix"/>
+		<value code="GR113-092" label="Non-Injury: Hernia"/>
+		<value code="GR113 093" label="Non-Injury: Chronic liver disease and cirrhosis"/>
+		<value code="GR113-096" label="Non-Injury: Cholelithiasis and other disorders of gallbladder"/>
+		<value code="GR113 097" label="Non-Injury: Nephritis, nephrotic syndrome and nephrosis"/>
+		<value code="GR113-102" label="Non-Injury: Infections of kidney"/>
+		<value code="GR113-103" label="Non-Injury: Hyperplasia of prostate"/>
+		<value code="GR113-104" label="Non-Injury: Inflammatory diseases of female pelvic organs"/>
+		<value code="GR113-106" label="Non-Injury: Pregnancy with abortive outcome"/>
+		<value code="GR113-107" label="Non-Injury: Other complications of pregnancy, childbirth and the puerperium"/>
+		<value code="GR113-108" label="Non-Injury: Certain conditions originating in the perinatal period"/>
+		<value code="GR113-109" label="Non-Injury: Congenital malformations, deformations and chromosomal abnormalities"/>
+		<value code="GR113-110" label="Non-Injury: Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified"/>
+		<value code="GR113-111" label="Non-Injury: All other diseases (Residual)"/>
+		<value code="GR113-135" label="Non-Injury: Complications of medical and surgical care"/>
+	</variable>
+	<variable groupby-heading="endgroup"/>
+	<variable code="D140.V100" label="$hidden$" type="nogroupby,noselect,novalues" display-code="F" use-finder="false">
+		<other-param-control code="O_county" value="D140.V100"/>
+	</variable>
+	<variable code="D140.V101" label="$hidden$" type="nogroupby,noselect,novalues" display-code="F" use-finder="false">
+		<other-param-control code="O_county" value="D140.V101"/>
+	</variable>
+	<measure code="D140.M1" label="Deaths" type="count" datatype="int" isdefault="true"/>
+	<measure code="D140.M2" label="Population" type="pop" datatype="int" isdefault="true"/>
+	<measure code="D140.M3" label="Crude Rate" type="rate" datatype="double" isdefault="true">
+		<combine-label idx="0" label="(95% Confidence Interval)"/>
+	</measure>
+	<measure code="D140.M31" label="Crude Rate Standard Error" type="se" datatype="double" isdefault="false"/>
+	<measure code="D140.M32" label="Crude Rate Lower 95% Confidence Interval" type="lci" datatype="double" isdefault="false"/>
+	<measure code="D140.M33" label="Crude Rate Upper 95% Confidence Interval" type="uci" datatype="double" isdefault="false"/>
+	<measure code="D140.M4" label="Age Adjusted Rate" type="rate" datatype="double" isdefault="false">
+		<combine-label idx="0" label="(95% Confidence Interval)"/>
+	</measure>
+	<measure code="D140.M41" label="Age Adjusted Rate Standard Error" type="se" datatype="double" isdefault="false"/>
+	<measure code="D140.M42" label="Age Adjusted Rate Lower 95% Confidence Interval" type="lci" datatype="double" isdefault="false"/>
+	<measure code="D140.M43" label="Age Adjusted Rate Upper 95% Confidence Interval" type="uci" datatype="double" isdefault="false"/>
+	<measure code="D140.M6" label="Non-standard Age Adjusted Rate" type="rate" datatype="double" isdefault="false">
+		<combine-label idx="0" label="(95% Confidence Interval)"/>
+	<variable code="D140.V1" label="Year" type="range=1999-2016" display-code="F" use-finder="false">
+		<range>
+			<min code="1999" label="1999"/>
+			<max code="2016" label="2016"/>
+		</range>
+		<value code="1999" label="1999"/>
+		<value code="2000" label="2000"/>
+		<value code="2001" label="2001"/>
+		<value code="2002" label="2002"/>
+		<value code="2003" label="2003"/>
+		<value code="2004" label="2004"/>
+		<value code="2005" label="2005"/>
+		<value code="2006" label="2006"/>
+		<value code="2007" label="2007"/>
+		<value code="2008" label="2008"/>
+		<value code="2009" label="2009"/>
+		<value code="2010" label="2010"/>
+		<value code="2011" label="2011"/>
+		<value code="2012" label="2012"/>
+		<value code="2013" label="2013"/>
+		<value code="2014" label="2014"/>
+		<value code="2015" label="2015"/>
+		<value code="2016" label="2016"/>
+	</variable>
+	<variable code="D140.V10" label="Census Regions" type="display-label-code,hier1,related,use-finder" display-code="T-Last" use-finder="true">
+		<other-param-control code="O_county" value="D140.V100"/>
+		<other-param-control code="O_location" value="D140.V10"/>
+		<hier-level code="D140.V10-level1" level="1" label="Census Region" type="geo=region-cens"/>
+		<hier-level code="D140.V10-level2" level="2" label="Census Division" type="geo=division-cens,valuesvary"/>
+		<hier-level code="D140.V10-level3" level="3" label="State" type="geo=state,valuesvary,alias=D140.V9-level1"/>
+		<hier-level code="D140.V10-level4" level="4" label="County" type="geo=county-mort-2014,valuesvary,alias=D140.V9-level2"/>
+	</variable>
+	<variable code="D140.V7" label="Gender" type="" display-code="F" use-finder="false">
+		<value code="F" label="Female"/>
+		<value code="M" label="Male"/>
+	</variable>
+	<variable code="D140.V8" label="Race" type="" display-code="F" use-finder="false">
+		<value code="1002-5" label="American Indian or Alaska Native"/>
+		<value code="A-PI" label="Asian or Pacific Islander"/>
+		<value code="2054-5" label="Black or African American"/>
+		<value code="2106-3" label="White"/>
+	</variable>
+	<variable code="D140.V17" label="Hispanic Origin" type="" display-code="F" use-finder="false">
+		<value code="2135-2" label="Hispanic or Latino"/>
+		<value code="2186-2" label="Not Hispanic or Latino"/>
+		<value code="NS" label="Not Stated"/>
+	</variable>
+	<variable code="D140.V9" label="States" type="display-label-code,hier1,related,use-finder" display-code="T-Last" use-finder="true">
+		<other-param-control code="O_county" value="D140.V100"/>
+		<other-param-control code="O_location" value="D140.V9"/>
+		<hier-level code="D140.V9-level1" level="1" label="State" type="geo=state,mapvar=D140.V10-level3"/>
+		<hier-level code="D140.V9-level2" level="2" label="County" type="geo=county-mort-2014,valuesvary,mapvar=D140.V10-level4"/>
+	</variable>
+	<variable code="D140.V18" label="HHS Regions" type="hier1,related,use-finder" display-code="F" use-finder="true">
+		<other-param-control code="O_county" value="D140.V100"/>
+		<other-param-control code="O_location" value="D140.V18"/>
+		<hier-level code="D140.V18-level1" level="1" label="HHS Region" type="geo=region-hhs"/>
+		<hier-level code="D140.V18-level2" level="2" label="State" type="geo=state,valuesvary,alias=D140.V9-level1"/>
+		<hier-level code="D140.V18-level3" level="3" label="County" type="geo=county-mort-2014,valuesvary,alias=D140.V9-level2"/>
+	</variable>
+	</measure>
+	<measure code="D140.M61" label="Non-standard Age Adjusted Rate Standard Error" type="se" datatype="double" isdefault="false"/>
+	<measure code="D140.M62" label="Non-standard Age Adjusted Rate Lower 95% Confidence Interval" type="lci" datatype="double" isdefault="false"/>
+	<measure code="D140.M63" label="Non-standard Age Adjusted Rate Upper 95% Confidence Interval" type="uci" datatype="double" isdefault="false"/>
+	<measure code="D140.M9" label="% of Total Deaths" type="percent" datatype="double" isdefault="false"/>
+<documentation>
+	<citation>Centers for Disease Control and Prevention, National Center for Health Statistics. 
+		Compressed Mortality File 1999-2016 on CDC WONDER Online Database, released June 2017.
+		Data are from the Compressed Mortality File 1999-2016 Series 20 No. 2U, 2016, 
+		as compiled from data provided by the 57 vital statistics jurisdictions through the 
+		Vital Statistics Cooperative Program.</citation>
+	<helpfile>/wonder/help/cmf.html</helpfile>
+	<jumppageURL>/mortSQL.html</jumppageURL>
+	<jumppageText>Compressed Mortality Data</jumppageText>
+	<citationURL>http://wonder.cdc.gov/cmf-icd10.html</citationURL>
+	<about><p>
+		The Compressed Mortality database contains mortality and population counts for all U.S. counties. Counts and rates of death can be obtained 
+		by underlying cause of death, state, county, age, race, sex, and year. Data are also available for Hispanic ethnicity, injury intent, injury 
+		mechanism, urbanization categories (both the 2006 and 2013 NCHS Urban-Rural Schemes are available), and core-based statistical areas (CBSAs) of  
+		250,000 or more population (both the December 2005 and February 2013 Office of Management and Budget (OMB) delineation of CBSAs).   
+		</p>
+		<p>
+		This Request form allows you to request data for the years 1999 - 2016 only, with the underlying cause of death 
+		specified with ICD-10 codes. To request data for other years, see 
+		<a href="/mortSQL.html">Compressed Mortality File</a>. 
+		For more information, refer to <a href="/wonder/help/cmf.html#Compressed Mortality File: ICD Revision" target="WONDER_Help" onclick="setfocus('WONDER_Help')">
+		Why Separate Query Pages?</a>
+		</p>
+		<p>
+		<b>Data Use Restrictions:</b>
+		</p>
+		<p>
+		The Public Health Service Act (42 U.S.C. 242m(d)) provides that the data collected by the 
+		National Center for Health Statistics (NCHS) may be used only for the purpose for which they were obtained; 
+		any effort to determine the identity of any reported cases, or to use the information for any purpose other 
+		than for health statistical reporting and analysis, is against the law. Therefore users will:
+
+		<ul><li>Use these data for health statistical reporting and analysis only. 
+		</li><li>For sub-national geography, do not present or publish death counts of 9 or fewer or
+			death rates based on counts of nine or fewer (in figures, graphs, maps, tables, etc.).
+		</li><li>Make no attempt to learn the identity of any person or establishment included in these data.
+		</li><li>Make no disclosure or other use of the identity of any person or establishment discovered inadvertently 
+			and advise the NCHS Confidentiality Officer of any such discovery.
+		</li></ul>
+
+		<div style="margin-left: 60px; margin-top: -15px">
+		<br/> Confidentiality Officer 
+		<br/> National Center for Health Statistics 
+		<br/> 3311 Toledo Road
+		<br/> Hyattsville, MD 20782 
+		<br/> Telephone 888-642-4159
+ 		<br/> Email: nchsconfidentiality@cdc.gov
+		</div>
+		</p>
+		<p>
+		<b> Sanctions for Violating Rules: </b>
+		</p>
+		<p>
+		Researchers who violate the terms of the data use restrictions will lose access to WONDER 
+		and their sponsors and institutions will be notified.  Researchers who are suspected of 
+		violating the rules may be prevented from using WONDER until an investigation can be completed.
+		Deliberately making a false statement in any matter within the jurisdiction of any department or 
+		agency of the Federal government violates 18 USC 1001 and is punishable by a fine of up to $10,000 
+		or up to 5 years in prison, or both.
+		</p></about>
+	<dataurl>http://www.cdc.gov/nchs/data_access/cmf.htm</dataurl>
+	<caveat code="D140.C01">
+		<text evaluate="false"><![CDATA[Due to confidentiality constraints, 
+				sub-national death counts and rates are suppressed 
+				when the number of deaths is less than 10. 
+				Figures representing infant deaths and births have additional constraints 
+				for national and local data. 
+				#Assurance of Confidentiality#]]></text>
+		<rule>wonder:cmf-flag('Suppressed')</rule>
+	</caveat>
+	<caveat code="D140.C01a">
+		<text evaluate="false"><![CDATA[Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 
+				or less. #Unreliable#]]></text>
+		<rule>wonder:cmf-flag('Unreliable')</rule>
+	</caveat>
+	<caveat code="D140.C02">
+		<text evaluate="false"><![CDATA[About national population figures:  
+				population figures for 1999 are from the 1990-1999 series of bridged-race intercensal estimates of the July 1 resident population; 
+				population figures for 2000 and 2010 are bridged-race April 1 census counts;
+				population figures for 2001-2009 are from the revised 2000-2009 series of bridged-race intercensal estimates of the July 1 resident population; 
+				population figures for 2011 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2011  series  released by NCHS on July 18, 2012; 
+				population figures for 2012 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2012  series  released by NCHS on June 13, 2013; 
+				population figures for 2013 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2013  series  released by NCHS on June 26, 2014; 
+				population figures for 2014 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2014  series  released by NCHS on June 30, 2015. 
+				and
+				population figures for 2015 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2015  series  released by NCHS on June 28, 2016. 
+
+				#Population Information#]]></text>
+		<rule>wonder:cmf-is-national() and not(wonder:cmf-infant-livebirths())</rule>
+	</caveat>
+	<caveat code="D140.C02a">
+		<text evaluate="false"><![CDATA[About sub-national population figures for regions, divisions, states and counties: 
+				population figures for 1999 are from the 1990-1999 series of bridged-race intercensal estimates of the July 1 resident population; 
+				population figures for 2000 and 2010 are bridged-race April 1 census counts; 
+				population figures for 2001-2009 are from the revised 2000-2009 series of bridged-race intercensal estimates of the July 1 resident population;
+				and 
+				population figures for 2011-2015 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2015  series  released by NCHS on June 28, 2016.]]></text>
+		<rule>not(wonder:cmf-is-national()) and not(wonder:cmf-infant-livebirths())</rule>
+	</caveat>
+	<caveat code="D140.C02b">
+		<text evaluate="false"><![CDATA[The population figures used in this table are the number of live births.  Number of live births 
+				has been substituted for the estimate of the population under 1 year of age to permit calculation of infant 
+				mortality rates. All rates in this table are calculated by dividing the number of infant deaths by the number 
+				of registered live births in the same time period. It is recommended that infant mortality rates be calculated 
+				per 1,000 births. #Infant Mortality#]]></text>
+		<rule>wonder:cmf-infant-livebirths()</rule>
+	</caveat>
+	<caveat code="D140.C02c">
+		<text evaluate="false"><![CDATA[The population figures used in the calculation of death rates for the age group 'under 1 year' 
+				are the estimates of the resident population that is under one year of age. #Age Group#]]></text>
+		<rule>wonder:cmf-infant-estimates()</rule>
+	</caveat>
+	<caveat xmlns:wonder="http://wonder.cdc.gov" xmlns:xalan="http://xml.apache.org/xalan" code="D140.C02d">
+		<text evaluate="true">concat("The populations used to calculate standard age-adjusted rates are 
+				documented here: ", wonder:cmf-aar-pop())</text>
+		<rule>wonder:cmf-aar('std')</rule>
+	</caveat>
+	<caveat code="D140.C02e">
+		<text evaluate="false"><![CDATA[The criteria used to determine the populations for the non-standard 
+				age-adjusted rates are documented in the <a href="#Non-standard Age Adjusted Rate Parameters:">Query Criteria</a> section below.]]></text>
+		<rule>wonder:cmf-aar('non-std')</rule>
+	</caveat>
+	<caveat code="D140.C02f">
+		<text evaluate="false"><![CDATA[Prior to September 18, 2015, the population figures used for Compressed 
+			Mortality queries involving state and counties combined may have been incorrect. 
+			#State-County-Erratum#]]></text>
+		<rule>wonder:cmf-state-county-mixed()</rule>
+	</caveat>
+	<caveat xmlns:wonder="http://wonder.cdc.gov" xmlns:xalan="http://xml.apache.org/xalan" code="D140.C03">
+		<text evaluate="true">concat("The method used to calculate age-adjusted rates is documented here: ", wonder:cmf-aar-help())</text>
+		<rule>wonder:cmf-aar('both')</rule>
+	</caveat>
+	<caveat code="D140.C03a">
+		<text evaluate="false"><![CDATA[Deaths for persons of unknown age are included in counts and crude rates, 
+				but are not included in age-adjusted rates.]]></text>
+		<rule>wonder:cmf-age-rate()</rule>
+	</caveat>
+	<caveat code="D140.C03b">
+		<text evaluate="false"><![CDATA[Deaths of persons with Age "Not Stated" are included in "All" counts and rates, 
+				but are not distributed among age groups, so are not included in age-specific counts, age-specific 
+				rates or in any age-adjusted rates. #Not Stated#]]></text>
+		<rule>wonder:cmf-not-stated('V5')</rule>
+	</caveat>
+	<caveat code="D140.C03c">
+		<text evaluate="false"><![CDATA[Deaths of persons with Hispanic origin "Not Stated" are included in "All" counts and rates, 
+				but are not distributed among Hispanic Origin groups, so are not included in the Hispanic Origin specific 
+				counts and rates. #Not Stated#]]></text>
+		<rule>wonder:cmf-not-stated('V17')</rule>
+	</caveat>
+	<caveat code="D140.C03d">
+		<text evaluate="false"><![CDATA[Information included on the death certificate about the race and Hispanic ethnicity of the 
+				decedent is reported by the funeral director as provided by an informant, often the surviving next of kin, 
+				or, in the absence of an informant, on the basis of observation. Race and ethnicity information from the 
+				census is by self-report. To the extent that race and Hispanic origin are inconsistent between these two 
+				data sources, death rates will be biased. #Racial Differences#]]></text>
+		<rule>wonder:cmf-race-hisp()</rule>
+	</caveat>
+	<caveat code="D140.C03e">
+		<text evaluate="false"><![CDATA[The method used to calculate 95% confidence intervals is documented here: #Confidence-Intervals#]]></text>
+		<rule>wonder:cmf-confidence-intervals()</rule>
+	</caveat>
+	<caveat code="D140.C03f">
+		<text evaluate="false"><![CDATA[The method used to calculate standard errors is documented here: #Standard-Errors#]]></text>
+		<rule>wonder:cmf-standard-errors()</rule>
+	</caveat>
+	<caveat code="D140.C03g">
+		<text evaluate="false"><![CDATA[2005 Metro/Nonmetro is based on the classification of counties as metropolitan or nonmetropolitan 
+				(micropolitan or noncore) according to the December 2005 OMB delineation of core based statistical areas.]]></text>
+		<rule>wonder:cmf-mnm2005()</rule>
+	</caveat>
+	<caveat code="D140.C03h">
+		<text evaluate="false"><![CDATA[2013 Metro/Nonmetro is based on the classification of counties as metropolitan or nonmetropolitan 
+				(micropolitan or noncore) according to the February 2013 OMB delineation of core based statistical areas.]]></text>
+		<rule>wonder:cmf-mnm2013()</rule>
+	</caveat>
+	<caveat code="D140.C03g2">
+		<text evaluate="false"><![CDATA[2006 Urbanization is based on the 2006 NCHS Urban-Rural Classification Scheme for Counties.]]></text>
+		<rule>wonder:cmf-urban2006()</rule>
+	</caveat>
+	<caveat code="D140.C03h2">
+		<text evaluate="false"><![CDATA[2013 Urbanization is based on the 2013 NCHS Urban-Rural Classification Scheme for Counties.]]></text>
+		<rule>wonder:cmf-urban2013()</rule>
+	</caveat>
+	<caveat code="D140.C03i">
+		<text evaluate="false"><![CDATA[Changes to cause of death classification affect reporting trends. #ICD-10 Changes#]]></text>
+		<rule>wonder:mort-cod-selected()</rule>
+	</caveat>
+	<caveat xmlns:wonder="http://wonder.cdc.gov" xmlns:xalan="http://xml.apache.org/xalan" code="D140.C03j">
+		<text evaluate="true">concat("These items in the results table are not fully selected: ", wonder:partial-hier-labels(), ". The Query Description lists the actual values selected.")</text>
+		<rule>wonder:partial-hier()</rule>
+	</caveat>
+	<caveat code="D140.C03k">
+		<text evaluate="false"><![CDATA[As of April 3, 2017, the underlying cause of death 
+				has been revised for 125 deaths in 2014. #2014-Revision#]]></text>
+		<rule>wonder:cmf-2014()</rule>
+	</caveat>
+	<caveat code="D140.C03l">
+		<text evaluate="false"><![CDATA[2013 CBSA shows data for core based statistical areas (CBSAs) of 250,000 or more population delineated in the June 2013 OMB 
+				classification of counties as metropolitan or nonmetropolitan (micropolitan or noncore).]]></text>
+		<rule>wonder:cmf-cbsa2013()</rule>
+	</caveat>
+	<caveat code="D140.C03m">
+		<text evaluate="false"><![CDATA[2005 CBSA shows data for core based statistical areas (CBSAs) of 250,000 or more population delineated in the December 2005 OMB 
+				classification of counties as metropolitan or nonmetropolitan (micropolitan or noncore).]]></text>
+		<rule>wonder:cmf-cbsa2005()</rule>
+	</caveat>
+	<caveat code="D140.C10">
+		<text evaluate="false"><![CDATA[Denali Borough, Alaska (FIPS code 02068) data are only available for 2003 and later; 
+				for computational purposes, counts and population estimates for 1999-2002 are set to zero.  Thus, counts 
+				and rates shown in multi-year requests for this entity do not include any data for years prior to 2003, 
+				only data for 2003 and later. #Denali Borough#]]></text>
+		<rule>wonder:cmf-3()</rule>
+	</caveat>
+	<caveat code="D140.C11">
+		<text evaluate="false"><![CDATA[Hoonah-Angoon Census Area, Alaska (FIPS code 02105) data are only available for 2014 
+				and later; for computational purposes, counts and population estimates for 1999-2013 are set to zero.  
+				Thus, counts and rates shown in multi-year requests for this entity do not include any data for years 
+				prior to 2014, only data for 2014 and later. #Hoonah-Angoon Census Area#]]></text>
+		<rule>wonder:cmf-31()</rule>
+	</caveat>
+	<caveat code="D140.C12">
+		<text evaluate="false"><![CDATA[Petersburg Borough/Census Area, Alaska (FIPS code 02195) data are only available for 2014 
+				and later; for computational purposes, counts and population estimates for 1999-2013 are set to zero.  
+				Thus, counts and rates shown in multi-year requests for this entity do not include any data for years 
+				prior to 2014, only data for 2014 and later. #Petersburg Borough/Census Area#]]></text>
+		<rule>wonder:cmf-31a()</rule>
+	</caveat>
+	<caveat code="D140.C13">
+		<text evaluate="false"><![CDATA[Prince of Wales-Hyder Census Area, Alaska (FIPS code 02198) data are only available for 2014 
+				and later; for computational purposes, counts and population estimates for 1999-2013 are set to zero.  
+				Thus, counts and rates shown in multi-year requests for this entity do not include any data for years prior 
+				to 2014, only data for 2014 and later. #Prince of Wales-Hyder Census Area#]]></text>
+		<rule>wonder:cmf-31b()</rule>
+	</caveat>
+	<caveat code="D140.C14">
+		<text evaluate="false"><![CDATA[Prince of Wales-Outer Ketchikan Census Area, Alaska  (FIPS code 02201) data are available 
+				only for 1999-2013.	For 2014 and beyond, death counts and population estimates for 
+				Prince of Wales-Outer Ketchikan Census Area Census Area are reported as Prince of Wales-Hyder Census Area (FIPS code 02198). 
+				Death counts and population estimates for this 
+				entity from multi-year requests, only reflect data from 1999 through 2013; for 2014 and beyond they have been 
+				set to zero.  #Prince of Wales-Outer Ketchikan Census Area#]]></text>
+		<rule>wonder:cmf-31g()</rule>
+	</caveat>
+	<caveat code="D140.C15">
+		<text evaluate="false"><![CDATA[Skagway Municipality, Alaska (FIPS code 02230) data are only available for 2014 and later; 
+				for computational purposes, counts and population estimates for 1999-2013 are set to zero.  Thus, counts 
+				and rates shown in multi-year requests for this entity do not include any data for years prior to 2014, 
+				only data for 2014 and later. #Skagway Municipality#]]></text>
+		<rule>wonder:cmf-31c()</rule>
+	</caveat>
+	<caveat code="D140.C16">
+		<text evaluate="false"><![CDATA[Skagway-Hoonah-Angoon Census Area, Alaska  (FIPS code 02232) data are available only for 
+				1999-2013.	For 2014 and beyond, death counts and population estimates for 
+				Skagway-Hoonah-Angoon Census Area are reported as Hoonah-Angoon Census Area(FIPS code 02105) and
+				Skagway Municipality, (FIPS code 02230).  Death counts and population estimates for this 
+				entity from multi-year requests, only reflect data from 1999 through 2013; for 2014 and beyond they have been 
+				set to zero.  #Skagway-Hoonah-Angoon Census Area#]]></text>
+		<rule>wonder:cmf-31e()</rule>
+	</caveat>
+	<caveat code="D140.C17">
+		<text evaluate="false"><![CDATA[Wrangell City and Borough, Alaska (FIPS code 02275) data are only available for 2014 and 
+				later; for computational purposes, counts and population estimates for 1999-2013 are set to zero.  
+				Thus, counts and rates shown in multi-year requests for this entity do not include any data for years prior 
+				to 2014, only data for 2014 and later. #Wrangell City and Borough#]]></text>
+		<rule>wonder:cmf-31d()</rule>
+	</caveat>
+	<caveat code="D140.C18">
+		<text evaluate="false"><![CDATA[Wrangell-Petersburg Census Area, Alaska  (FIPS code 02280) data are available only for 
+				1999-2013.	For 2014 and beyond, death counts and population estimates for 
+				Wrangell-Petersburg Census Area are reported as Petersburg Borough/Census Area (FIPS code 02195) and
+				Wrangell City and Borough, (FIPS code 02275).  Death counts and population estimates for this 
+				entity from multi-year requests, only reflect data from 1999 through 2013; for 2014 and beyond they have been 
+				set to zero.  #Wrangell-Petersburg Census Area#]]></text>
+		<rule>wonder:cmf-31f()</rule>
+	</caveat>
+	<caveat code="D140.C19">
+		<text evaluate="false"><![CDATA[Yukon-Koyukuk Census Area (FIPS code 02290) has a discontinuity in the mortality and population 
+				data between the years 2002 and 2003.  This discontinuity occurs because part of Yukon-Koyukuk Census 
+				Area became Denali Borough, Alaska (FIPS code 02068) and beginning in 2003, deaths and population 
+				counts for this former part of Yukon-Koyukuk are reported for Denali Borough and are no longer 
+				included with data for Yukon-Koyukuk. #Yukon-Koyukuk, Alaska#]]></text>
+		<rule>wonder:cmf-3a()</rule>
+	</caveat>
+	<caveat code="D140.C20">
+		<text evaluate="false"><![CDATA[Circumstances in California resulted in unusually high death counts for the ICD-10 cause of 
+				death code R99, "Other ill-defined and unspecified causes of mortality" for deaths occurring in years 
+				2000 and 2001. Caution should be used in interpreting these 
+				data. #California-Reporting-Anomalies#]]></text>
+		<rule>wonder:mort-ca-cod()</rule>
+	</caveat>
+	<caveat code="D140.C21">
+		<text evaluate="false"><![CDATA[Adams County, Colorado (FIPS code 08001) has a discontinuity in the mortality and population 
+				data between the years 2002 and 2003. This discontinuity occurs because 
+				territory in this county has been combined with other territory to form a new county, Broomfield, 
+				Colorado (FIPS code 08014).  Beginning in 2003 deaths and population counts for this territory 
+				are reported with Broomfield county and are no longer included with data for Adams County.]]></text>
+		<rule>wonder:cmf-1a()</rule>
+	</caveat>
+	<caveat code="D140.C22">
+		<text evaluate="false"><![CDATA[Boulder County, Colorado (FIPS code 08013) has a discontinuity in the mortality and population 
+				data between the years 2002 and 2003. This discontinuity occurs because 
+				territory in this county has been combined with other territory to form a new county, Broomfield, 
+				Colorado (FIPS code 08014).  Beginning in 2003 deaths and population counts for this territory 
+				are reported with Broomfield county and are no longer included with data for Boulder County.]]></text>
+		<rule>wonder:cmf-1b()</rule>
+	</caveat>
+	<caveat code="D140.C23">
+		<text evaluate="false"><![CDATA[Broomfield, Colorado (FIPS code 08014) data are only available for 2003 and later; for 
+				computational purposes, counts and population estimates for 1999-2002 are set to zero.  Thus, counts and 
+				rates shown in multi-year requests for this entity do not include any data for years prior to 2003, only 
+				data for 2003 and later.  #Broomfield#]]></text>
+		<rule>wonder:cmf-1()</rule>
+	</caveat>
+	<caveat code="D140.C24">
+		<text evaluate="false"><![CDATA[Jefferson County, Colorado (FIPS code 08059) has a discontinuity in the mortality and population 
+				data between the years 2002 and 2003. This discontinuity occurs because 
+				territory in this county has been combined with other territory to form a new county, Broomfield, 
+				Colorado (FIPS code 08014).  Beginning in 2003 deaths and population counts for this territory 
+				are reported with Broomfield county and are no longer included with data for Jefferson County.]]></text>
+		<rule>wonder:cmf-1c()</rule>
+	</caveat>
+	<caveat code="D140.C25">
+		<text evaluate="false"><![CDATA[Weld County, Colorado (FIPS code 08123) has a discontinuity in the mortality and population 
+				data between the years 2002 and 2003. This discontinuity occurs because 
+				territory in this county has been combined with other territory to form a new county, Broomfield, 
+				Colorado (FIPS code 08014).  Beginning in 2003 deaths and population counts for this territory 
+				are reported with Broomfield county and are no longer included with data for Weld County.]]></text>
+		<rule>wonder:cmf-1d()</rule>
+	</caveat>
+	<caveat code="D140.C26">
+		<text evaluate="false"><![CDATA[Circumstances in Georgia for the years 2008-2009 have resulted in unusually high death 
+				counts for the ICD-10 cause of death code R99, "Other ill-defined and unspecified causes of mortality." 
+				Caution should be used in interpreting these data. #Georgia-Reporting-Anomalies#]]></text>
+		<rule>wonder:mort-ga-cod()</rule>
+	</caveat>
+	<caveat code="D140.C27">
+		<text evaluate="false"><![CDATA[Allen Parish, Louisiana (FIPS code 22003) data in 2006 through 2008 are under reported 
+				due to problems with registering the deaths with the Louisiana Vital Statistics Office.]]></text>
+		<rule>wonder:cmf-30()</rule>
+	</caveat>
+	<caveat code="D140.C28">
+		<text evaluate="false"><![CDATA[Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts 
+				for the ICD-10 cause of death code R99, "Other ill-defined and unspecified causes of mortality" and 
+				therefore unusually low death counts in other ICD-10 codes, most notably R95, "Sudden Infant Death 
+				Syndrome" and X40-X49, "Unintentional poisoning." Caution should be used in interpreting these 
+				data. #New-Jersey-Reporting-Anomalies#]]></text>
+		<rule>wonder:mort-nj-cod()</rule>
+	</caveat>
+	<caveat code="D140.C29">
+		<text evaluate="false"><![CDATA[Carson City, Nevada (FIPS code 32510) data are shown separately from the adjacent 
+				counties for.]]></text>
+		<rule>wonder:cmf-5()</rule>
+	</caveat>
+	<caveat code="D140.C30">
+		<text evaluate="false"><![CDATA[Baltimore city, Maryland (FIPS code 24510) and Baltimore County, Maryland (FIPS code 24005) 
+				data are reported separately.]]></text>
+		<rule>wonder:cmf-4()</rule>
+	</caveat>
+	<caveat code="D140.C31">
+		<text evaluate="false"><![CDATA[St. Louis city, Missouri (FIPS code 29510) and St. Louis County, Missouri (FIPS code 29189) 
+				data are reported separately.]]></text>
+		<rule>wonder:cmf-7()</rule>
+	</caveat>
+	<caveat code="D140.C32">
+		<text evaluate="false"><![CDATA[Alleghany, Virginia (FIPS code 51005) has a discontinuity in the mortality and population 
+				data between the years 2000 and 2001. This discontinuity occurs because for 2001 and beyond, death counts and 
+				population estimates for Clifton Forge city, Virginia (FIPS code 51560) have been combined with those 
+				for Alleghany county. #Alleghany, Virginia#]]></text>
+		<rule>wonder:cmf-2a()</rule>
+	</caveat>
+	<caveat code="D140.C33">
+		<text evaluate="false"><![CDATA[Bedford city, Virginia (FIPS code 51515) data are available only for 1999-2010.	
+				For 2011 and beyond, death counts and population estimates for Bedford city have been combined with
+				Bedford County  (FIPS code 51019). Death counts and population estimates for this 
+				entity from multi-year requests, only reflect data from 1999 through 2010; for 2011 and beyond they have been 
+				set to zero.  #Bedford-Virginia#]]></text>
+		<rule>wonder:cmf-31h()</rule>
+	</caveat>
+	<caveat code="D140.C33a">
+		<text evaluate="false"><![CDATA[Bedford County (FIPS code 51019) has a discontinuity in the mortality and population 
+				data between the years 2010 and 2011. This discontinuity occurs because for 2011 and beyond, death counts and 
+				population estimates for Bedford city, Virginia (FIPS code 51515) have been combined with those 
+				for Bedford County. #Bedford-Virginia#]]></text>
+		<rule>wonder:cmf-31i()</rule>
+	</caveat>
+	<caveat code="D140.C34">
+		<text evaluate="false"><![CDATA[Clifton Forge city, Virginia (FIPS code 51560) data are available only for 1999-2000.  
+				For 2001 and beyond, death counts and population estimates for Clifton Forge city have been combined with 
+				those for Alleghany county, Virginia (FIPS code 51005).  Death counts and population estimates for this 
+				entity from multi-year requests, only reflect data from 1999 through 2000; for 2001 and beyond they have been 
+				set to zero.  #Clifton Forge#]]></text>
+		<rule>wonder:cmf-2()</rule>
+	</caveat>
+<footnote>wonder:cmf-3('footnote')</footnote>
+<footnote>wonder:cmf-1('footnote')</footnote>
+<footnote>wonder:cmf-1b('footnote')</footnote>
+<footnote>wonder:cmf-1c('footnote')</footnote>
+<footnote>wonder:cmf-1d('footnote')</footnote>
+<footnote>wonder:cmf-1e('footnote')</footnote>
+<footnote>wonder:cmf-2('footnote')</footnote>
+<footnote>wonder:cmf-3a('footnote')</footnote>
+<footnote>wonder:cmf-2a('footnote')</footnote>
+<footnote>wonder:cmf-30('footnote')</footnote>
+<footnote>wonder:cmf-31('footnote')</footnote>
+<footnote>wonder:cmf-31a('footnote')</footnote>
+<footnote>wonder:cmf-31b('footnote')</footnote>
+<footnote>wonder:cmf-31c('footnote')</footnote>
+<footnote>wonder:cmf-31d('footnote')</footnote>
+<footnote>wonder:cmf-31e('footnote')</footnote>
+<footnote>wonder:cmf-31f('footnote')</footnote>
+<footnote>wonder:cmf-31g('footnote')</footnote>
+<footnote>wonder:cmf-31h('footnote')</footnote>
+<footnote>wonder:cmf-31i('footnote')</footnote>
+</documentation>
+<missing var1="D140.V10-level4" var2="D140.V1">
+	<alias code="D140.V9" alias="D140.V10"/>
+	<alias code="D140.V9-level1" alias="D140.V10-level3"/>
+	<alias code="D140.V9-level2" alias="D140.V10-level4"/>
+	<instance code="02068">  <!-- Denali Borough, AK -->
+		<range>1999-2002</range>
+	</instance>
+	<instance code="02105">  <!-- Hoonah-Angoon Census Area, AK -->
+		<range>1999-2013</range>
+	</instance>
+	<instance code="02195">  <!-- Petersburg Borough/Census Area, AK -->
+		<range>1999-2013</range>
+	</instance>
+	<instance code="02198">  <!-- Prince of Wales-Hyder Census Area, AK -->
+		<range>1999-2013</range>
+	</instance>
+	<instance code="02201">  <!-- Prince of Wales-Outer Ketchikan Census Area, AK -->
+		<range>2014-2016</range>
+	</instance>
+	<instance code="02230">  <!-- Skagway Municipality, AK -->
+		<range>1999-2013</range>
+	</instance>
+	<instance code="02232">  <!-- Skagway-Hoonah-Angoon Census Area, AK -->
+		<range>2014-2016</range>
+	</instance>
+	<instance code="02275">  <!-- Wrangell City and Borough, AK -->
+		<range>1999-2013</range>
+	</instance>
+	<instance code="02280">  <!-- Wrangell-Petersburg Census Area, AK -->
+		<range>2014-2016</range>
+	</instance>
+	<instance code="08014">  <!-- Broomfield County, CO -->
+		<range>1999-2002</range>
+	</instance>
+	<instance code="51515">  <!-- Bedford city, VA -->
+		<range>2011-2016</range>
+	</instance>
+	<instance code="51560">  <!-- Clifton Forge city, VA -->
+		<range>2001-2016</range>
+	</instance>
+</missing>
+</dataset>
+<response>
+<request query-date="Dec 6, 2020 5:23:55 PM">
+<variable-selections>
+	<variable code="D140.V7" from-finder="false">
+		<value code="M"/>
+	</variable>
+	<variable code="D140.V12" from-finder="false">
+		<value code="3"/>
+	</variable>
+</variable-selections>
+<byvariables>
+	<variable code="D140.V17"/>
+</byvariables>
+<list-variables>
+</list-variables>
+<measure-selections>
+	<measure code="D140.M1"/>
+	<measure code="D140.M2"/>
+	<measure code="D140.M3"/>
+</measure-selections>
+<other-parameters>
+	<parameter code="O_show_totals" label="Show Totals" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>true</value>
+	</parameter>
+	<parameter code="O_show_zeros" label="Show Zero Values" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>false</value>
+	</parameter>
+	<parameter code="O_show_suppressed" label="Show Suppressed" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>false</value>
+	</parameter>
+	<parameter code="O_precision" label="Precision" display="false">
+		<option value="0" label="0"/>
+		<option value="1" label="1"/>
+		<option value="2" label="2"/>
+		<option value="3" label="3"/>
+		<option value="4" label="4"/>
+		<option value="5" label="5"/>
+		<option value="6" label="6"/>
+		<option value="7" label="7"/>
+		<option value="8" label="8"/>
+		<option value="9" label="9"/>
+		<value>1</value>
+	</parameter>
+	<parameter code="O_timeout" label="Data Access Timeout" display="false">
+		<option value="60" label="1"/>
+		<option value="120" label="2"/>
+		<option value="180" label="3"/>
+		<option value="240" label="4"/>
+		<option value="300" label="5"/>
+		<option value="360" label="6"/>
+		<option value="420" label="7"/>
+		<option value="480" label="8"/>
+		<option value="540" label="9"/>
+		<option value="600" label="10"/>
+		<option value="660" label="11"/>
+		<option value="720" label="12"/>
+		<option value="780" label="13"/>
+		<option value="840" label="14"/>
+		<option value="900" label="15"/>
+		<value>600</value>
+	</parameter>
+	<parameter code="O_groups_count" label="Groups" display="false">
+		<option value="2" label="Two"/>
+		<option value="3" label="Three"/>
+		<option value="4" label="Four"/>
+		<option value="5" label="Five"/>
+		<option value="6" label="Six"/>
+		<option value="7" label="Seven"/>
+		<option value="8" label="Eight"/>
+		<option value="9" label="Nine"/>
+		<option value="10" label="Ten"/>
+		<value>4</value>
+	</parameter>
+	<parameter code="O_groups_methods" label="Group Breaks Method" display="false">
+		<option value="QUANTILE" label="Quantile"/>
+		<option value="EQUAL" label="Equal Interval"/>
+		<value>QUANTILE</value>
+	</parameter>
+	<parameter code="O_aar_pop" label="Standard Population" display="false">
+		<option value="0000" label="2000 U.S. Std. Population"/>
+		<option value="1940" label="1940 U.S. Std. Million"/>
+		<option value="1970" label="1970 U.S. Std. Million"/>
+		<option value="2000" label="2000 U.S. Std. Million"/>
+		<value>0000</value>
+	</parameter>
+	<parameter code="O_rate_per" label="Calculate Rates Per" display="true">
+		<option value="1000" label="1,000"/>
+		<option value="10000" label="10,000"/>
+		<option value="100000" label="100,000"/>
+		<option value="1000000" label="1,000,000"/>
+		<value>100000</value>
+	</parameter>
+	<parameter code="O_V18_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_cbsa" display="false">
+		<value>D140.V20</value>
+	</parameter>
+	<parameter code="O_aar" display="false">
+		<value>aar_none</value>
+	</parameter>
+	<parameter code="O_javascript" display="false">
+		<value>on</value>
+	</parameter>
+	<parameter code="O_age" display="false">
+		<value>D140.V5</value>
+	</parameter>
+	<parameter code="O_V10_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_oc-sect1-request" display="false">
+		<value>open</value>
+	</parameter>
+	<parameter code="O_urban" display="false">
+		<value>D140.V22</value>
+	</parameter>
+	<parameter code="O_V2_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_title" display="false">
+		<value></value>
+	</parameter>
+	<parameter code="O_county" display="false">
+		<value>D140.V100</value>
+	</parameter>
+	<parameter code="O_V9_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_location" display="false">
+		<value>D140.V9</value>
+	</parameter>
+	<parameter code="O_icd" display="false">
+		<value>D140.V12</value>
+	</parameter>
+	<parameter code="O_V4_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_labels_opt" display="false">
+		<value>false</value>
+	</parameter>
+	<parameter code="O_show_rank" display="false">
+		<value>false</value>
+	</parameter>
+	<parameter code="O_groups" display="false">
+		<value>false</value>
+	</parameter>
+</other-parameters>
+<request-parameters>
+	<parameter>
+		<name>B_1</name>
+		<value>D140.V17</value>
+	</parameter>
+	<parameter>
+		<name>B_2</name>
+		<value>*None*</value>
+	</parameter>
+	<parameter>
+		<name>B_3</name>
+		<value>*None*</value>
+	</parameter>
+	<parameter>
+		<name>B_4</name>
+		<value>*None*</value>
+	</parameter>
+	<parameter>
+		<name>B_5</name>
+		<value>*None*</value>
+	</parameter>
+	<parameter>
+		<name>M_1</name>
+		<value>D140.M1</value>
+	</parameter>
+	<parameter>
+		<name>M_2</name>
+		<value>D140.M2</value>
+	</parameter>
+	<parameter>
+		<name>M_3</name>
+		<value>D140.M3</value>
+	</parameter>
+	<parameter>
+		<name>VM_D140.M6_D140.V1</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>VM_D140.M6_D140.V10</name>
+		<value></value>
+	</parameter>
+	<parameter>
+		<name>VM_D140.M6_D140.V17</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>VM_D140.M6_D140.V7</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>VM_D140.M6_D140.V8</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V1</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V10</name>
+		<value></value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V11</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V12</name>
+		<value>3</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V13</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V17</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V18</name>
+		<value></value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V19</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V2</name>
+		<value></value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V20</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V21</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V22</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V23</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V4</name>
+		<value></value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V5</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V6</name>
+		<value>00</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V7</name>
+		<value>M</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V8</name>
+		<value>*All*</value>
+	</parameter>
+	<parameter>
+		<name>V_D140.V9</name>
+		<value></value>
+	</parameter>
+</request-parameters>
+</request>
+<other-parameters>
+	<parameter code="O_show_totals" label="Show Totals" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>true</value>
+	</parameter>
+	<parameter code="O_show_zeros" label="Show Zero Values" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>false</value>
+	</parameter>
+	<parameter code="O_show_suppressed" label="Show Suppressed" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>false</value>
+	</parameter>
+	<parameter code="O_precision" label="Precision" display="false">
+		<option value="0" label="0"/>
+		<option value="1" label="1"/>
+		<option value="2" label="2"/>
+		<option value="3" label="3"/>
+		<option value="4" label="4"/>
+		<option value="5" label="5"/>
+		<option value="6" label="6"/>
+		<option value="7" label="7"/>
+		<option value="8" label="8"/>
+		<option value="9" label="9"/>
+		<value>1</value>
+	</parameter>
+	<parameter code="O_timeout" label="Data Access Timeout" display="false">
+		<option value="60" label="1"/>
+		<option value="120" label="2"/>
+		<option value="180" label="3"/>
+		<option value="240" label="4"/>
+		<option value="300" label="5"/>
+		<option value="360" label="6"/>
+		<option value="420" label="7"/>
+		<option value="480" label="8"/>
+		<option value="540" label="9"/>
+		<option value="600" label="10"/>
+		<option value="660" label="11"/>
+		<option value="720" label="12"/>
+		<option value="780" label="13"/>
+		<option value="840" label="14"/>
+		<option value="900" label="15"/>
+		<value>600</value>
+	</parameter>
+	<parameter code="O_groups_count" label="Groups" display="false">
+		<option value="2" label="Two"/>
+		<option value="3" label="Three"/>
+		<option value="4" label="Four"/>
+		<option value="5" label="Five"/>
+		<option value="6" label="Six"/>
+		<option value="7" label="Seven"/>
+		<option value="8" label="Eight"/>
+		<option value="9" label="Nine"/>
+		<option value="10" label="Ten"/>
+		<value>4</value>
+	</parameter>
+	<parameter code="O_groups_methods" label="Group Breaks Method" display="false">
+		<option value="QUANTILE" label="Quantile"/>
+		<option value="EQUAL" label="Equal Interval"/>
+		<value>QUANTILE</value>
+	</parameter>
+	<parameter code="O_aar_pop" label="Standard Population" display="false">
+		<option value="0000" label="2000 U.S. Std. Population"/>
+		<option value="1940" label="1940 U.S. Std. Million"/>
+		<option value="1970" label="1970 U.S. Std. Million"/>
+		<option value="2000" label="2000 U.S. Std. Million"/>
+		<value>0000</value>
+	</parameter>
+	<parameter code="O_rate_per" label="Calculate Rates Per" display="true">
+		<option value="1000" label="1,000"/>
+		<option value="10000" label="10,000"/>
+		<option value="100000" label="100,000"/>
+		<option value="1000000" label="1,000,000"/>
+		<value>100000</value>
+	</parameter>
+	<parameter code="O_V18_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_cbsa" display="false">
+		<value>D140.V20</value>
+	</parameter>
+	<parameter code="O_aar" display="false">
+		<value>aar_none</value>
+	</parameter>
+	<parameter code="O_javascript" display="false">
+		<value>on</value>
+	</parameter>
+	<parameter code="O_age" display="false">
+		<value>D140.V5</value>
+	</parameter>
+	<parameter code="O_V10_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_oc-sect1-request" display="false">
+		<value>open</value>
+	</parameter>
+	<parameter code="O_urban" display="false">
+		<value>D140.V22</value>
+	</parameter>
+	<parameter code="O_V2_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_title" display="false">
+		<value></value>
+	</parameter>
+	<parameter code="O_county" display="false">
+		<value>D140.V100</value>
+	</parameter>
+	<parameter code="O_V9_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_location" display="false">
+		<value>D140.V9</value>
+	</parameter>
+	<parameter code="O_icd" display="false">
+		<value>D140.V12</value>
+	</parameter>
+	<parameter code="O_V4_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_labels_opt" display="false">
+		<value>disabled</value>
+	</parameter>
+	<parameter code="O_show_rank" display="false">
+		<value>false</value>
+	</parameter>
+	<parameter code="O_groups" display="false">
+		<value>false</value>
+	</parameter>
+	<parameter code="O_labels_quick" display="false">
+		<value>disabled</value>
+	</parameter>
+</other-parameters>
+<measure-selections>
+	<measure code="D140.M1" min="1,601" max="246,892" minNtNz="1,601" maxNtNz="198,836" minNtWz="1,601" maxNtWz="198,836" minWtNz="1,601" maxWtNz="246,892"/>
+	<measure code="D140.M2" min="426,030,816" max="2,671,902,519" minNtNz="426,030,816" maxNtNz="2,245,871,703" minNtWz="426,030,816" maxNtWz="2,245,871,703" minWtNz="426,030,816" maxWtNz="2,671,902,519"/>
+	<measure code="D140.M3" min="8.9" max="10.9" minNtNz="8.9" maxNtNz="10.9" minNtWz="8.9" maxNtWz="10.9" minWtNz="8.9" maxWtNz="10.9"/>
+</measure-selections>
+<measure-selections-all>
+	<measure code="D140.M1"/>
+	<measure code="D140.M2"/>
+	<measure code="D140.M3"/>
+</measure-selections-all>
+<data-table show-all-labels="false">
+<r><c l="Hispanic or Latino"/><c v="46,455"/><c v="426,030,816"/><c v="10.9"/></r>
+<r><c l="Not Hispanic or Latino"/><c v="198,836"/><c v="2,245,871,703"/><c v="8.9"/></r>
+<r><c l="Not Stated"/><c v="1,601"/><c v="Not Applicable"/><c v="Not Applicable"/></r>
+<r><c c="1"/><c dt="246,892"/><c dt="2,671,902,519"/><c dt="9.2"/></r>
+</data-table>
+<flags>
+<flag oncount="false">Not Applicable</flag>
+</flags>
+<options>
+<other-parameters>
+	<parameter code="O_show_totals" label="Show Totals" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>true</value>
+	</parameter>
+	<parameter code="O_show_zeros" label="Show Zero Values" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>false</value>
+	</parameter>
+	<parameter code="O_show_suppressed" label="Show Suppressed" display="true">
+		<option value="true" label="True"/>
+		<option value="false" label="False"/>
+		<option value="disabled" label="Disabled"/>
+		<value>false</value>
+	</parameter>
+	<parameter code="O_precision" label="Precision" display="false">
+		<option value="0" label="0"/>
+		<option value="1" label="1"/>
+		<option value="2" label="2"/>
+		<option value="3" label="3"/>
+		<option value="4" label="4"/>
+		<option value="5" label="5"/>
+		<option value="6" label="6"/>
+		<option value="7" label="7"/>
+		<option value="8" label="8"/>
+		<option value="9" label="9"/>
+		<value>1</value>
+	</parameter>
+	<parameter code="O_timeout" label="Data Access Timeout" display="false">
+		<option value="60" label="1"/>
+		<option value="120" label="2"/>
+		<option value="180" label="3"/>
+		<option value="240" label="4"/>
+		<option value="300" label="5"/>
+		<option value="360" label="6"/>
+		<option value="420" label="7"/>
+		<option value="480" label="8"/>
+		<option value="540" label="9"/>
+		<option value="600" label="10"/>
+		<option value="660" label="11"/>
+		<option value="720" label="12"/>
+		<option value="780" label="13"/>
+		<option value="840" label="14"/>
+		<option value="900" label="15"/>
+		<value>600</value>
+	</parameter>
+	<parameter code="O_groups_count" label="Groups" display="false">
+		<option value="2" label="Two"/>
+		<option value="3" label="Three"/>
+		<option value="4" label="Four"/>
+		<option value="5" label="Five"/>
+		<option value="6" label="Six"/>
+		<option value="7" label="Seven"/>
+		<option value="8" label="Eight"/>
+		<option value="9" label="Nine"/>
+		<option value="10" label="Ten"/>
+		<value>4</value>
+	</parameter>
+	<parameter code="O_groups_methods" label="Group Breaks Method" display="false">
+		<option value="QUANTILE" label="Quantile"/>
+		<option value="EQUAL" label="Equal Interval"/>
+		<value>QUANTILE</value>
+	</parameter>
+	<parameter code="O_aar_pop" label="Standard Population" display="false">
+		<option value="0000" label="2000 U.S. Std. Population"/>
+		<option value="1940" label="1940 U.S. Std. Million"/>
+		<option value="1970" label="1970 U.S. Std. Million"/>
+		<option value="2000" label="2000 U.S. Std. Million"/>
+		<value>0000</value>
+	</parameter>
+	<parameter code="O_rate_per" label="Calculate Rates Per" display="true">
+		<option value="1000" label="1,000"/>
+		<option value="10000" label="10,000"/>
+		<option value="100000" label="100,000"/>
+		<option value="1000000" label="1,000,000"/>
+		<value>100000</value>
+	</parameter>
+	<parameter code="O_V18_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_cbsa" display="false">
+		<value>D140.V20</value>
+	</parameter>
+	<parameter code="O_aar" display="false">
+		<value>aar_none</value>
+	</parameter>
+	<parameter code="O_javascript" display="false">
+		<value>on</value>
+	</parameter>
+	<parameter code="O_age" display="false">
+		<value>D140.V5</value>
+	</parameter>
+	<parameter code="O_V10_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_oc-sect1-request" display="false">
+		<value>open</value>
+	</parameter>
+	<parameter code="O_urban" display="false">
+		<value>D140.V22</value>
+	</parameter>
+	<parameter code="O_V2_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_title" display="false">
+		<value></value>
+	</parameter>
+	<parameter code="O_county" display="false">
+		<value>D140.V100</value>
+	</parameter>
+	<parameter code="O_V9_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_location" display="false">
+		<value>D140.V9</value>
+	</parameter>
+	<parameter code="O_icd" display="false">
+		<value>D140.V12</value>
+	</parameter>
+	<parameter code="O_V4_fmode" display="false">
+		<value>freg</value>
+	</parameter>
+	<parameter code="O_labels_opt" display="false">
+		<value>disabled</value>
+	</parameter>
+	<parameter code="O_show_rank" display="false">
+		<value>false</value>
+	</parameter>
+	<parameter code="O_groups" display="false">
+		<value>false</value>
+	</parameter>
+	<parameter code="O_labels_quick" display="false">
+		<value>disabled</value>
+	</parameter>
+</other-parameters>
+<measure-selections-show>
+	<measure code="D140.M1"/>
+	<measure code="D140.M2"/>
+	<measure code="D140.M3"/>
+</measure-selections-show>
+<groups>
+</groups>
+</options>
+<footnotes>
+</footnotes>
+<caveats>
+<caveat><![CDATA[About national population figures:  
+				population figures for 1999 are from the 1990-1999 series of bridged-race intercensal estimates of the July 1 resident population; 
+				population figures for 2000 and 2010 are bridged-race April 1 census counts;
+				population figures for 2001-2009 are from the revised 2000-2009 series of bridged-race intercensal estimates of the July 1 resident population; 
+				population figures for 2011 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2011  series  released by NCHS on July 18, 2012; 
+				population figures for 2012 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2012  series  released by NCHS on June 13, 2013; 
+				population figures for 2013 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2013  series  released by NCHS on June 26, 2014; 
+				population figures for 2014 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2014  series  released by NCHS on June 30, 2015. 
+				and
+				population figures for 2015 are bridged-race postcensal estimates of the July 1 resident population, 
+				from the Vintage 2015  series  released by NCHS on June 28, 2016. 
+
+				<a href="/wonder/help/cmf.html#Population Information" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a>]]></caveat>
+<caveat><![CDATA[The population figures used in the calculation of death rates for the age group 'under 1 year' 
+				are the estimates of the resident population that is under one year of age. <a href="/wonder/help/cmf.html#Age Group" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a>]]></caveat>
+<caveat><![CDATA[Deaths of persons with Hispanic origin "Not Stated" are included in "All" counts and rates, 
+				but are not distributed among Hispanic Origin groups, so are not included in the Hispanic Origin specific 
+				counts and rates. <a href="/wonder/help/cmf.html#Not Stated" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a>]]></caveat>
+<caveat><![CDATA[Information included on the death certificate about the race and Hispanic ethnicity of the 
+				decedent is reported by the funeral director as provided by an informant, often the surviving next of kin, 
+				or, in the absence of an informant, on the basis of observation. Race and ethnicity information from the 
+				census is by self-report. To the extent that race and Hispanic origin are inconsistent between these two 
+				data sources, death rates will be biased. <a href="/wonder/help/cmf.html#Racial Differences" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a>]]></caveat>
+<caveat><![CDATA[As of April 3, 2017, the underlying cause of death 
+				has been revised for 125 deaths in 2014. <a href="/wonder/help/cmf.html#2014-Revision" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a>]]></caveat>
+<caveat><![CDATA[Circumstances in California resulted in unusually high death counts for the ICD-10 cause of 
+				death code R99, "Other ill-defined and unspecified causes of mortality" for deaths occurring in years 
+				2000 and 2001. Caution should be used in interpreting these 
+				data. <a href="/wonder/help/cmf.html#California-Reporting-Anomalies" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a>]]></caveat>
+<caveat><![CDATA[Circumstances in Georgia for the years 2008-2009 have resulted in unusually high death 
+				counts for the ICD-10 cause of death code R99, "Other ill-defined and unspecified causes of mortality." 
+				Caution should be used in interpreting these data. <a href="/wonder/help/cmf.html#Georgia-Reporting-Anomalies" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a>]]></caveat>
+<caveat><![CDATA[Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts 
+				for the ICD-10 cause of death code R99, "Other ill-defined and unspecified causes of mortality" and 
+				therefore unusually low death counts in other ICD-10 codes, most notably R95, "Sudden Infant Death 
+				Syndrome" and X40-X49, "Unintentional poisoning." Caution should be used in interpreting these 
+				data. <a href="/wonder/help/cmf.html#New-Jersey-Reporting-Anomalies" target="WONDER_Help" onclick="setfocus('WONDER_Help')">More information.</a>]]></caveat>
+</caveats>
+</response>
+<tabs2>
+	<tab label="Request Form" status="closed" target="request" title="Click to see the request page"/>
+	<tab label="Results" status="open" target="results" title="Click to see the results table"/>
+	<tab label="Map" status="closed" target="map" title="Click to create maps"/>
+	<tab label="Chart" status="closed" target="chart" title="Click to create charts"/>
+	<tab label="About" status="closed" target="about" title="Information about this dataset"/>
+</tabs2>
+<thisfile>\wonder\templates\xsl\table_response.xsl</thisfile>
+</page>

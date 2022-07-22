@@ -1,0 +1,73 @@
+saved_id:
+dataset_code: D140
+dataset_label: Compressed Mortality, 1999-2016
+O_county: D140.V100
+dataset_vintage_latest: CMF-ICD10
+stage: request
+O_javascript: on
+M_1: D140.M1
+M_2: D140.M2
+M_3: D140.M3
+O_aar: aar_none
+B_1: D140.V7
+B_2: D140.V8
+B_3: D140.V1
+B_4: *None*
+B_5: *None*
+O_title:
+O_oc-sect1-request: close
+O_rate_per: 100000
+O_aar_pop: 0000
+VM_D140.M6_D140.V1: *All*
+VM_D140.M6_D140.V7: *All*
+VM_D140.M6_D140.V17: *All*
+VM_D140.M6_D140.V8: *All*
+VM_D140.M6_D140.V10:
+O_location: D140.V9
+finder-stage-D140.V9: codeset
+O_V9_fmode: freg
+V_D140.V9:
+F_D140.V9: *All*
+I_D140.V9: *All* (The United States)
+finder-stage-D140.V10: codeset
+O_V10_fmode: freg
+V_D140.V10:
+F_D140.V10: *All*
+I_D140.V10: *All* (The United States)
+finder-stage-D140.V18: codeset
+O_V18_fmode: freg
+V_D140.V18:
+F_D140.V18: *All*
+I_D140.V18: *All* (The United States)
+O_cbsa: D140.V20
+V_D140.V20: *All*
+V_D140.V21: *All*
+O_urban: D140.V22
+V_D140.V22: *All*
+V_D140.V19: *All*
+V_D140.V23: *All*
+V_D140.V11: *All*
+O_age: D140.V5
+V_D140.V5: *All*
+V_D140.V6: 00
+V_D140.V1: *All*
+V_D140.V7: *All*
+V_D140.V8: *All*
+V_D140.V17: *All*
+O_icd: D140.V2
+finder-stage-D140.V2: codeset
+O_V2_fmode: freg
+V_D140.V2:
+F_D140.V2: *All*
+I_D140.V2: *All* (All Causes of Death)
+finder-stage-D140.V4: codeset
+O_V4_fmode: freg
+V_D140.V4:
+F_D140.V4: *All*
+I_D140.V4: *All* (All Causes of Death)
+V_D140.V12: *All*
+V_D140.V13: *All*
+O_show_totals: true
+O_precision: 1
+O_timeout: 600
+action-Send: Send

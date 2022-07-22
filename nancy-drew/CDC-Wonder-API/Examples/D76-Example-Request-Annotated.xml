@@ -1,0 +1,432 @@
+<!--This is an example set of parameters provided by the CDC, specifically for use with their /D76 endpoint. Every endpoint requires a slightly different set of parameters, but this is useful as an example of the structure, including correct ordering of parameters. I am going to annotate each parameter with what it is controlling, and then compare to the form data sent in the header of the /D140 endpoint, which contains all the parameters sent using the query portal. Hopefully, I can construct a working set of parameters by mimicking the style/order for this D76 set-->
+<request-parameters>
+    <!--Group By First value.-->
+    <parameter>
+        <name>B_1</name>
+        <value>D76.V1-level1</value>
+    </parameter>
+    <!--Group By Second value.-->
+    <parameter>
+        <name>B_2</name>
+        <value>D76.V8</value>
+    </parameter>
+    <!--Group By First value.-->
+    <parameter>
+        <name>B_3</name>
+        <value>*None*</value>
+    </parameter>
+    <!--Group By First value.-->
+    <parameter>
+        <name>B_4</name>
+        <value>*None*</value>
+    </parameter>
+    <!--Group By First value.-->
+    <parameter>
+        <name>B_5</name>
+        <value>*None*</value>
+    </parameter>
+    <!--Year Finder box. /D76 allows you to search for multiple years and/or months of records within the dataset. Can send multiple values in this parameter, each with its own <value></value> tag-->
+    <parameter>
+        <name>F_D76.V1</name>
+        <value>1999</value>
+        <value>2000</value>
+        <value>2001</value>
+        <value>2002</value>
+        <value>2003</value>
+        <value>2004</value>
+        <value>2005</value>
+        <value>2006</value>
+        <value>2007</value>
+        <value>2008</value>
+        <value>2009</value>
+        <value>2010</value>
+        <value>2011</value>
+        <value>2012</value>
+        <value>2013</value>
+    </parameter>
+    <!--Census Region Finder box -->
+    <parameter>
+        <name>F_D76.V10</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the Finder box for search criteria related to cause of death by ICD-10 Codes. the value is for a range of ICD-10 codes.-->
+    <parameter>
+        <name>F_D76.V2</name>
+        <value>C00-D48</value>
+    </parameter>
+    <!--This is the finder box for search criteria related to Drug/Alcohol Induced Deaths. Can select from various causes of death in that category.-->
+    <parameter>
+        <name>F_D76.V25</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the finder box for HHS regions. Must be sent along with the Current SElection box (I_D76.V27)-->
+    <parameter>
+        <name>F_D76.V27</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the finder box for searching by State and County Codes. Must be sent with the selection box parameter (I_D76.V9).-->
+    <parameter>
+        <name>F_D76.V9</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This parameter is the Current Selection box for the Year/Month Finder box. Must be sent along with the Finder box (F_D76.V1)-->
+    <parameter>
+        <name>I_D76.V1</name>
+        <value>1999 (1999) 2000 (2000) 2001 (2001) 2002 (2002) 2003 (2003) 2004 (2004) 2005 (2005) 2006 (2006) 2007 (2007) 2008 (2008) 2009 (2009) 2010 (2010) 2011 (2011) 2012 (2012) 2013 (2013) </value>
+    </parameter>
+    <!--This parameter is the Current Selection box for the Census Regions Finder box. Must be sent along with the Finder box (F_D76.V10)-->
+    <parameter>
+        <name>I_D76.V10</name>
+        <value>*All* (The United States) </value>
+    </parameter>
+    <!--This parameter is the Current Selection box for the cause of death by ICD-10 Codes Finder box. Must be sent along with the Finder box (F_D76.V2).-->
+    <parameter>
+        <name>I_D76.V2</name>
+        <value>C00-D48 (Neoplasms) </value>
+    </parameter>
+    <!--This parameter is the Current Selection box for the drug induced deaths Finder Box (F_D76.V25). Must be sent along with the Finder box (F_D76.V25)-->
+    <parameter>
+        <name>I_D76.V25</name>
+        <value>All Causes of Death </value>
+    </parameter>
+    <!--This parameter is the Current Selection box for the HHS regions Finder Box (F_D76.V27). Must be sent along with the Finder Box.-->
+    <parameter>
+        <name>I_D76.V27</name>
+        <value>*All* (The United States) </value>
+    </parameter>
+    <!--This parameter is the Current Selection box for the State and County Finder box (F_D76.V9).-->
+    <parameter>
+        <name>I_D76.V9</name>
+        <value>*All* (The United States) </value>
+    </parameter>
+    <!--This is the Measures checkbox for Death. Is a default setting and must be included.-->
+    <parameter>
+        <name>M_1</name>
+        <value>D76.M1</value>
+    </parameter>
+    <!--This is the Measures checkbox for Population. Is a default setting and must be included.-->
+    <parameter>
+        <name>M_2</name>
+        <value>D76.M2</value>
+    </parameter>
+    <!--This is the Measures checkbox for Crude Rate. Is a default setting and must be included.-->
+    <parameter>
+        <name>M_3</name>
+        <value>D76.M3</value>
+    </parameter>
+    <!--This is the Measures checkbox for Percent of Total Deaths.-->
+    <parameter>
+        <name>M_9</name>
+        <value>D76.M9</value>
+    </parameter>
+
+    <parameter>
+        <name>O_V10_fmode</name>
+        <value>freg</value>
+    </parameter>
+    <!--This controls whether Census Regions uses regular or advanced finder parameters. freg = regular finder, fadv = advanced finder.-->
+    <parameter>
+        <name>O_V1_fmode</name>
+        <value>freg</value>
+    </parameter>
+    <!--This controls whether Drug/Alcohol Induced Deaths uses regular or advanced finder parameters. freg = regular finder, fadv = advanced finder.-->
+    <parameter>
+        <name>O_V25_fmode</name>
+        <value>freg</value>
+    </parameter>
+    <!--This controls whether HHS Regions uses regular or advanced finder parameters. freg = regular finder, fadv = advanced finder.-->
+    <parameter>
+        <name>O_V27_fmode</name>
+        <value>freg</value>
+    </parameter>
+    <!--This controls whether ICD Codes Finder box uses regular or advanced finder parameters. freg = regular finder, fadv = advanced finder.-->
+    <parameter>
+        <name>O_V2_fmode</name>
+        <value>freg</value>
+    </parameter>
+    <!--This controls whether State and County Codes Finder box uses regular or advanced finder parameters. freg = regular finder, fadv = advanced finder.-->
+    <parameter>
+        <name>O_V9_fmode</name>
+        <value>freg</value>
+    </parameter>
+    <!--Age Adjusted Rate. Possible values are aar_none, aar_std, and aar_nonstd. On the query portal, this is the "Age Adjusted Rate" checkbox. If that checkbox is unchecked, the value of the parameter is aar_none. If the checkbox is checked, this value should be either "aar_std" or "aar_nonstd". -->
+    <parameter>
+        <name>O_aar</name>
+        <value>aar_std</value>
+    </parameter>
+    <!--Age Adjusted Rate 95% confidence interval. Corresponds to the query portal Measures checkbox called 95% Confidence Interval.-->
+    <parameter>
+        <name>O_aar_CI</name>
+        <value>true</value>
+    </parameter>
+    <!--Age Adjusted Rate Standard Error Measures checkbox.-->
+    <parameter>
+        <name>O_aar_SE</name>
+        <value>true</value>
+    </parameter>
+    <!--Controls the Age Adjusted Rate checkbox-->
+    <parameter>
+        <name>O_aar_enable</name>
+        <value>true</value>
+    </parameter>
+    <parameter>
+        <!--This is the standard population finder box for Age Adjusted Rate Options (found under the "Additional Rate Options" menu). Possible values are 0000 (2000 US Standard Population), 1940 (1940 US standard Million), 1970 (19770 US Standard Million), or 2000 (2000 US Standard Million).-->
+        <name>O_aar_pop</name>
+        <value>0000</value>
+    </parameter>
+    <!--This is the set of radio buttons in the Demographics menu. Possible values are D76.V5 (Ten Year Age Groups), D76.V51 (Five Year Age Groups), D76.V52 (Single Year Age Groups), or D76.V6 (Infant Age Groups).-->
+    <parameter>
+        <name>O_age</name>
+        <value>D76.V5</value>
+    </parameter>
+    <!--Controls whether javascript is enabled. The default is off. Possible values are "on" or "off"-->
+    <parameter>
+        <name>O_javascript</name>
+        <value>on</value>
+    </parameter>
+    <!--Contorls the three radio buttons under the Select Location menu. Possible values are D76.V9 (States), D76.V10 (Census Regions), or D76.V27 (HHS Regions).-->
+    <parameter>
+        <name>O_location</name>
+        <value>D76.V9</value>
+    </parameter>
+    <!--This controls toggling the "Additional Rate Options" collapsible menu. If the value is "close" the menu is collapsed. If the value is "open" the menu is expanded.-->
+    <parameter>
+        <name>O_oc-sect1-request</name>
+        <value>close</value>
+    </parameter>
+    <!--This controls how many decimal places to show in the rate calculations. Can be set from 0 to 9.-->
+    <parameter>
+        <name>O_precision</name>
+        <value>1</value>
+    </parameter>
+    <!--This controls the "Calculate Rates Per" box under the expandable "Additional Rate Options" menu. Possible values are 1000, 10000, 100000, and 1000000-->
+    <parameter>
+        <name>O_rate_per</name>
+        <value>100000</value>
+    </parameter>
+    <!--Controls the "Show Suppressed Values" in the other options menu at the bottom of the query portal. True is checked, false is unchecked.-->
+    <parameter>
+        <name>O_show_suppressed</name>
+        <value>true</value>
+    </parameter>
+    <!--Controls the "Show Totals" in the other options menu at the bottom of the query portal. True is checked, false is unchecked.-->
+    <parameter>
+        <name>O_show_totals</name>
+        <value>true</value>
+    </parameter>
+    <!--Controls the "Show Zero Values" in the other options menu at the bottom of the query portal. True is checked, false is unchecked.-->
+    <parameter>
+        <name>O_show_zeros</name>
+        <value>true</value>
+    </parameter>
+    <!--Controls the "Data Access Timeout" dropdown menu in the other options menu at the bottom of the query portal. Possible values are 60 (1 minute), 120 (2 minutes), 180 (3 minutes), 240 (4 minutes), 300 (5 minutes), 360 (6 minutes), 420 (7 minutes), 480 (8 minutes), 540 (9 minutes), 600 (10 minutes), 660 (11 minutes), 720 (12 minutes), 780 (13 minutes), 840 (14 minutes), and 900 (15 minutes)..-->
+    <parameter>
+        <name>O_timeout</name>
+        <value>600</value>
+    </parameter>
+    <!--This controls a custom title for your response. You can set the value to whatever text you want.-->
+    <parameter>
+        <name>O_title</name>
+        <value>Example1</value>
+    </parameter>
+    <!--This is to set the "Select Cause of Death" section's ICD codes by Chapters or Group. Possible values are D76.V2 (ICD-10 Codes), D76.v12 (ICD-10 130 Cause List (infants), D76.V4 (ICD-10 113 Cause List), D76.V22 (Injury Intent and Mechanism), and D76.V25 (Drug/Alcohol Induced Causes). -->
+    <parameter>
+        <name>O_ucd</name>
+        <value>D76.V2</value>
+    </parameter>
+    <!--Select urbanization. Possible values are D76.V19 (2013 Urbanization) and D76.V11 (2006 Urbanization).-->
+    <parameter>
+        <name>O_urban</name>
+        <value>D76.V19</value>
+    </parameter>
+    <!--This is the "Location" box under the "Additional Rate Options" expandable menu. It can be sent empty or can accept FIPS location codes.-->
+    <parameter>
+        <name>VM_D76.M6_D76.V10</name>
+    <value/>
+    </parameter>
+    <!--This is the "Hispanic Origin" box under the "Additional Rate Options" expandable menu. Possible values are *All* (All origins), 2135-2 (Hispanic or Latino), 2186-2 (Not Hispanic or Latino), or NS (Not Stated).-->
+    <parameter>
+        <name>VM_D76.M6_D76.V17</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Year" box under the "Additional Rate Options" expandable menu. Values can be *All* or any year 1999 - 2018.-->
+    <parameter>
+        <name>VM_D76.M6_D76.V1_S</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Gender" box under the "Additional Rate Options" expandable menu. Possible values are *All*, M, and F.-->
+    <parameter>
+        <name>VM_D76.M6_D76.V7</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Race" box under the "Additional Rate Options" expandable menu. Possible values include *All*, 1002-5 (American Indian or Alaska Native), A-PI (Asian or Pacific Islander), 2054-5 (Black or African American), or 2106-3 (White)-->
+    <parameter>
+        <name>VM_D76.M6_D76.V8</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the Selected Items box under the "Advanced Finder Options" menu for the Select Year and Month section. Its value is empty by default. -->
+    <parameter>
+        <name>V_D76.V1</name>
+    <value/>
+    </parameter>
+    <!--This is the Selected Items box under the "Advanced Finder Options" menu for the Select Location Census Regions selection. Its value is empty by default.-->
+    <parameter>
+        <name>V_D76.V10</name>
+    <value/>
+    </parameter>
+    <!--This parameter for 2006 Urbanization. Possible values are *All*, 1 (Large Central Metro), 2 (Large Fringe Metro), 3 (Medium Metro), 4 (Small Metro), 5 (Micropolitan/Nonmetro), 6 (NonCore Nonmetro) -->
+    <parameter>
+        <name>V_D76.V11</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is cause of death by ICD-10 130 Cause List (Infants)-->
+    <parameter>
+        <name>V_D76.V12</name>
+        <value>*All*</value>
+    </parameter>
+    <!--Hispanic Origin box for Select Demographics menu. Possible values are *All*, 2135-2 (Hispanic or Latino), 2186-2 (Not Hispanic or Latino), or NS (Not Stated)-->
+    <parameter>
+        <name>V_D76.V17</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This parameter for 2013 Urbanization. Possible values are *All*, 1 (Large Central Metro), 2 (Large Fringe Metro), 3 (Medium Metro), 4 (Small Metro), 5 (Micropolitan/Nonmetro), 6 (NonCore Nonmetro) -->
+    <parameter>
+        <name>V_D76.V19</name>
+        <value>*All*</value>
+    </parameter>
+    <!--Select cause of death by ICD-10 Codes with advanced finder options. Empty by default.-->
+    <parameter>
+        <name>V_D76.V2</name>
+    <value/>
+    </parameter>
+    <!--This is the Autopsy box.-->
+    <parameter>
+        <name>V_D76.V20</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the Place of Death box.-->
+    <parameter>
+        <name>V_D76.V21</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Injury Intent" selection box under the Select cause of death section. Possible values are *All*, 1 (Unintentional), 2 (Suicide), 3 (Homicide), 4 (Undetermined), 5 (Legal Intervention/Operations of war), and 9 (Non-injury, no intent classification) -->
+    <parameter>
+        <name>V_D76.V22</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Injury Mechanism & ALl Other Leading Causes" selection box, which is available when "Injury Intent and Mechanism" is selected under the Cause of death section. There are numerous values, which are ICD codes, or *All*-->
+    <parameter>
+        <name>V_D76.V23</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the Weekday selection box under the Autopsy section.-->
+    <parameter>
+        <name>V_D76.V24</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the Selected Items box under the "Advanced Finder Options" menu for the Drug/Alcohol Induced Causes under the Select cause of death section. Its value is empty by default.-->
+    <parameter>
+        <name>V_D76.V25</name>
+    <value/>
+    </parameter>
+    <!--This is the Selected Items box under the "Advanced Finder Options" menu for theHHS Regions under the Select Location section. Its value is empty by default.-->
+    <parameter>
+        <name>V_D76.V27</name>
+    <value/>
+    </parameter>
+    <!--This is the ICD-10 113 Cause list under Select Cause of Death, when ICD019 113 Cause is selected. There are numerous values by ICD code, or *All*.-->
+    <parameter>
+        <name>V_D76.V4</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Ten Year Age Groups" box located under the Select Demographics section. This box is only present when "Ten Year Age Groups" is selected. Values can be things like 1-4, 5-9, 10-14, etc. or *All* or NS (not stated)-->
+    <parameter>
+        <name>V_D76.V5</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Five Year Age Groups" box located under the Select Demographics section. This box is only present when "Five Year Age Groups" is selected. Values can be things like 1-4, 5-9, 10-14, etc. or *All* or NS (not stated)-->
+    <parameter>
+        <name>V_D76.V51</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Single Year Ages" box located under the Select Demographics section. This box is only present when "Single Year Ages" is selected. The values in this box range between 0-100, where 0 is "less than a year" and 100 is "100 years or over". Other possible values are *All* or NS (Not Stated)-->
+    <parameter>
+        <name>V_D76.V52</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the "Infant Age Groups" box located under the Select Demographics section. This box is only present when "Infant Age Groups" is selected.-->
+    <parameter>
+        <name>V_D76.V6</name>
+        <value>00</value>
+    </parameter>
+    <!--This is the Gender box under Select Demographics. Possible values are *All*, M, and F. -->
+    <parameter>
+        <name>V_D76.V7</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the Race box under the select demographics section. Possible values are *All*, 1002-5 (American Indian or Native Alaskan), A-PI (Asian or Pacific Islander), 2054-5 (Black or African American), 2106-3 (White).-->
+    <parameter>
+        <name>V_D76.V8</name>
+        <value>*All*</value>
+    </parameter>
+    <!--This is the Selected Items box for the Advanced Finder Options under the Select Location section, when the States option is selected. Its value is empty by default-->
+    <parameter>
+        <name>V_D76.V9</name>
+    <value/>
+    </parameter>
+    <!--This parameter is basically the send button on the query portal-->
+    <parameter>
+        <name>action-Send</name>
+        <value>Send</value>
+    </parameter>
+    <!--This is the database itself. D76 is the code for the database of Underlying Cause of Death, 1999-2016-->
+    <parameter>
+        <name>dataset_code</name>
+        <value>D76</value>
+    </parameter>
+    <!--This is the database label, ie the human-readable name given to the database-->
+    <parameter>
+        <name>dataset_label</name>
+        <value>Underlying Cause of Death, 1999-2016</value>
+    </parameter>
+    <!--This is the "vintage" or year that the data was aggregated/collected.-->
+    <parameter>
+        <name>dataset_vintage</name>
+        <value>2016</value>
+    </parameter>
+    <!--Unsure what these finder-stages do, I think they may be related to advanced finder options. Best way to know what to send is to check the query response in the network tab of dev tools. -->
+    <parameter>
+        <name>finder-stage-D76.V1</name>
+        <value>codeset</value>
+    </parameter>
+    <parameter>
+        <name>finder-stage-D76.V10</name>
+        <value>codeset</value>
+    </parameter>
+    <parameter>
+        <name>finder-stage-D76.V2</name>
+        <value>codeset</value>
+    </parameter>
+    <parameter>
+        <name>finder-stage-D76.V25</name>
+        <value>codeset</value>
+    </parameter>
+    <parameter>
+        <name>finder-stage-D76.V27</name>
+        <value>codeset</value>
+    </parameter>
+    <parameter>
+        <name>finder-stage-D76.V9</name>
+        <value>codeset</value>
+    </parameter>
+    <!--Saved id is empty by default but may be used to retrieved a previously saved search.-->
+    <parameter>
+        <name>saved_id</name>
+    <value/>
+    </parameter>
+    <!--No idea what this does but it needs to be sent.-->
+    <parameter>
+        <name>stage</name>
+        <value>request</value>
+    </parameter>
+</request-parameters>

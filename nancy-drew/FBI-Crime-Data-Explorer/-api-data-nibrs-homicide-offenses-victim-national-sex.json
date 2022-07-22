@@ -1,0 +1,460 @@
+{
+    "pagination": {
+        "count": 75,
+        "page": 0,
+        "pages": 1,
+        "per_page": 0
+    },
+    "results": [
+        {
+            "data_year": 2008,
+            "female_count": 774,
+            "male_count": 2450,
+            "unknown": 28
+        },
+        {
+            "data_year": 2017,
+            "female_count": 7,
+            "male_count": 226,
+            "unknown": 1
+        },
+        {
+            "data_year": 2012,
+            "female_count": 6,
+            "male_count": 163,
+            "unknown": 0
+        },
+        {
+            "data_year": 2011,
+            "female_count": 908,
+            "male_count": 2622,
+            "unknown": 13
+        },
+        {
+            "data_year": 1998,
+            "female_count": 34,
+            "male_count": 67,
+            "unknown": 3
+        },
+        {
+            "data_year": 2003,
+            "female_count": 634,
+            "male_count": 1493,
+            "unknown": 7
+        },
+        {
+            "data_year": 2000,
+            "female_count": 0,
+            "male_count": 40,
+            "unknown": 0
+        },
+        {
+            "data_year": 2006,
+            "female_count": 831,
+            "male_count": 2551,
+            "unknown": 25
+        },
+        {
+            "data_year": 2007,
+            "female_count": 4,
+            "male_count": 121,
+            "unknown": 1
+        },
+        {
+            "data_year": 1996,
+            "female_count": 0,
+            "male_count": 18,
+            "unknown": 0
+        },
+        {
+            "data_year": 2005,
+            "female_count": 59,
+            "male_count": 94,
+            "unknown": 1
+        },
+        {
+            "data_year": 2009,
+            "female_count": 866,
+            "male_count": 2582,
+            "unknown": 8
+        },
+        {
+            "data_year": 1997,
+            "female_count": 21,
+            "male_count": 42,
+            "unknown": 0
+        },
+        {
+            "data_year": 2012,
+            "female_count": 65,
+            "male_count": 155,
+            "unknown": 0
+        },
+        {
+            "data_year": 2017,
+            "female_count": 100,
+            "male_count": 220,
+            "unknown": 0
+        },
+        {
+            "data_year": 2016,
+            "female_count": 1171,
+            "male_count": 3548,
+            "unknown": 23
+        },
+        {
+            "data_year": 2002,
+            "female_count": 604,
+            "male_count": 1437,
+            "unknown": 15
+        },
+        {
+            "data_year": 1998,
+            "female_count": 1,
+            "male_count": 13,
+            "unknown": 1
+        },
+        {
+            "data_year": 2000,
+            "female_count": 44,
+            "male_count": 109,
+            "unknown": 7
+        },
+        {
+            "data_year": 2007,
+            "female_count": 51,
+            "male_count": 128,
+            "unknown": 2
+        },
+        {
+            "data_year": 2005,
+            "female_count": 4,
+            "male_count": 80,
+            "unknown": 0
+        },
+        {
+            "data_year": 1996,
+            "female_count": 23,
+            "male_count": 49,
+            "unknown": 0
+        },
+        {
+            "data_year": 1997,
+            "female_count": 0,
+            "male_count": 23,
+            "unknown": 0
+        },
+        {
+            "data_year": 2011,
+            "female_count": 51,
+            "male_count": 137,
+            "unknown": 3
+        },
+        {
+            "data_year": 2008,
+            "female_count": 41,
+            "male_count": 118,
+            "unknown": 2
+        },
+        {
+            "data_year": 2016,
+            "female_count": 4,
+            "male_count": 223,
+            "unknown": 0
+        },
+        {
+            "data_year": 2006,
+            "female_count": 58,
+            "male_count": 122,
+            "unknown": 3
+        },
+        {
+            "data_year": 2009,
+            "female_count": 60,
+            "male_count": 132,
+            "unknown": 1
+        },
+        {
+            "data_year": 1997,
+            "female_count": 243,
+            "male_count": 549,
+            "unknown": 2
+        },
+        {
+            "data_year": 2005,
+            "female_count": 808,
+            "male_count": 2502,
+            "unknown": 13
+        },
+        {
+            "data_year": 2002,
+            "female_count": 1,
+            "male_count": 61,
+            "unknown": 0
+        },
+        {
+            "data_year": 1998,
+            "female_count": 331,
+            "male_count": 654,
+            "unknown": 7
+        },
+        {
+            "data_year": 2003,
+            "female_count": 48,
+            "male_count": 123,
+            "unknown": 1
+        },
+        {
+            "data_year": 2011,
+            "female_count": 9,
+            "male_count": 163,
+            "unknown": 0
+        },
+        {
+            "data_year": 2012,
+            "female_count": 948,
+            "male_count": 2765,
+            "unknown": 11
+        },
+        {
+            "data_year": 2017,
+            "female_count": 1232,
+            "male_count": 3833,
+            "unknown": 24
+        },
+        {
+            "data_year": 2008,
+            "female_count": 1,
+            "male_count": 92,
+            "unknown": 1
+        },
+        {
+            "data_year": 2016,
+            "female_count": 143,
+            "male_count": 211,
+            "unknown": 3
+        },
+        {
+            "data_year": 2007,
+            "female_count": 831,
+            "male_count": 2573,
+            "unknown": 16
+        },
+        {
+            "data_year": 2006,
+            "female_count": 4,
+            "male_count": 93,
+            "unknown": 0
+        },
+        {
+            "data_year": 2000,
+            "female_count": 505,
+            "male_count": 1169,
+            "unknown": 16
+        },
+        {
+            "data_year": 2009,
+            "female_count": 1,
+            "male_count": 130,
+            "unknown": 0
+        },
+        {
+            "data_year": 1996,
+            "female_count": 208,
+            "male_count": 429,
+            "unknown": 3
+        },
+        {
+            "data_year": 2002,
+            "female_count": 41,
+            "male_count": 103,
+            "unknown": 2
+        },
+        {
+            "data_year": 2003,
+            "female_count": 2,
+            "male_count": 59,
+            "unknown": 0
+        },
+        {
+            "data_year": 1995,
+            "female_count": 146,
+            "male_count": 312,
+            "unknown": 0
+        },
+        {
+            "data_year": 2004,
+            "female_count": 0,
+            "male_count": 61,
+            "unknown": 1
+        },
+        {
+            "data_year": 2013,
+            "female_count": 912,
+            "male_count": 2620,
+            "unknown": 13
+        },
+        {
+            "data_year": 2019,
+            "female_count": 208,
+            "male_count": 387,
+            "unknown": 3
+        },
+        {
+            "data_year": 2018,
+            "female_count": 1372,
+            "male_count": 3874,
+            "unknown": 13
+        },
+        {
+            "data_year": 1999,
+            "female_count": 37,
+            "male_count": 70,
+            "unknown": 9
+        },
+        {
+            "data_year": 2010,
+            "female_count": 910,
+            "male_count": 2514,
+            "unknown": 9
+        },
+        {
+            "data_year": 2014,
+            "female_count": 924,
+            "male_count": 2647,
+            "unknown": 21
+        },
+        {
+            "data_year": 2015,
+            "female_count": 1067,
+            "male_count": 3146,
+            "unknown": 15
+        },
+        {
+            "data_year": 2004,
+            "female_count": 57,
+            "male_count": 100,
+            "unknown": 1
+        },
+        {
+            "data_year": 2019,
+            "female_count": 12,
+            "male_count": 296,
+            "unknown": 0
+        },
+        {
+            "data_year": 2001,
+            "female_count": 586,
+            "male_count": 1359,
+            "unknown": 15
+        },
+        {
+            "data_year": 1999,
+            "female_count": 0,
+            "male_count": 25,
+            "unknown": 0
+        },
+        {
+            "data_year": 2015,
+            "female_count": 3,
+            "male_count": 192,
+            "unknown": 0
+        },
+        {
+            "data_year": 2014,
+            "female_count": 10,
+            "male_count": 191,
+            "unknown": 0
+        },
+        {
+            "data_year": 1995,
+            "female_count": 13,
+            "male_count": 40,
+            "unknown": 0
+        },
+        {
+            "data_year": 2018,
+            "female_count": 154,
+            "male_count": 247,
+            "unknown": 0
+        },
+        {
+            "data_year": 2010,
+            "female_count": 66,
+            "male_count": 153,
+            "unknown": 1
+        },
+        {
+            "data_year": 1999,
+            "female_count": 390,
+            "male_count": 835,
+            "unknown": 6
+        },
+        {
+            "data_year": 2013,
+            "female_count": 79,
+            "male_count": 164,
+            "unknown": 0
+        },
+        {
+            "data_year": 2019,
+            "female_count": 1540,
+            "male_count": 5026,
+            "unknown": 25
+        },
+        {
+            "data_year": 2001,
+            "female_count": 4,
+            "male_count": 55,
+            "unknown": 0
+        },
+        {
+            "data_year": 2015,
+            "female_count": 105,
+            "male_count": 158,
+            "unknown": 3
+        },
+        {
+            "data_year": 2004,
+            "female_count": 634,
+            "male_count": 1705,
+            "unknown": 21
+        },
+        {
+            "data_year": 2014,
+            "female_count": 72,
+            "male_count": 165,
+            "unknown": 3
+        },
+        {
+            "data_year": 1995,
+            "female_count": 1,
+            "male_count": 12,
+            "unknown": 0
+        },
+        {
+            "data_year": 2018,
+            "female_count": 13,
+            "male_count": 261,
+            "unknown": 1
+        },
+        {
+            "data_year": 2010,
+            "female_count": 4,
+            "male_count": 137,
+            "unknown": 0
+        },
+        {
+            "data_year": 2013,
+            "female_count": 5,
+            "male_count": 149,
+            "unknown": 0
+        },
+        {
+            "data_year": 2001,
+            "female_count": 43,
+            "male_count": 95,
+            "unknown": 4
+        }
+    ]
+}

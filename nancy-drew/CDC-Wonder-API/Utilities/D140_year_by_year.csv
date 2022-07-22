@@ -1,0 +1,145 @@
+Gender,Race,Year,Number of Deaths,Population,Crude Rate Per Capita
+Female,American Indian or Alaska Native,1999,"5,220","1,421,980",367.1
+Female,American Indian or Alaska Native,2000,"5,178","1,496,044",346.1
+Female,American Indian or Alaska Native,2001,"5,511","1,552,172",355.1
+Female,American Indian or Alaska Native,2002,"5,665","1,604,289",353.1
+Female,American Indian or Alaska Native,2003,"6,041","1,659,114",364.1
+Female,American Indian or Alaska Native,2004,"5,990","1,716,767",348.9
+Female,American Indian or Alaska Native,2005,"6,311","1,778,645",354.8
+Female,American Indian or Alaska Native,2006,"6,407","1,843,293",347.6
+Female,American Indian or Alaska Native,2007,"6,482","1,911,949",339.0
+Female,American Indian or Alaska Native,2008,"6,613","1,986,553",332.9
+Female,American Indian or Alaska Native,2009,"6,855","2,062,396",332.4
+Female,American Indian or Alaska Native,2010,"7,049","2,120,884",332.4
+Female,American Indian or Alaska Native,2011,"7,307","2,161,369",338.1
+Female,American Indian or Alaska Native,2012,"7,460","2,188,020",340.9
+Female,American Indian or Alaska Native,2013,"7,721","2,217,452",348.2
+Female,American Indian or Alaska Native,2014,"8,179","2,250,008",363.5
+Female,American Indian or Alaska Native,2015,"8,565","2,279,263",375.8
+Female,American Indian or Alaska Native,2016,"8,763","2,307,116",379.8
+Female,Asian or Pacific Islander,1999,"15,345","5,845,369",262.5
+Female,Asian or Pacific Islander,2000,"15,857","6,044,295",262.3
+Female,Asian or Pacific Islander,2001,"17,219","6,399,700",269.1
+Female,Asian or Pacific Islander,2002,"17,849","6,681,015",267.2
+Female,Asian or Pacific Islander,2003,"18,941","6,954,880",272.3
+Female,Asian or Pacific Islander,2004,"19,235","7,225,506",266.2
+Female,Asian or Pacific Islander,2005,"20,386","7,510,126",271.4
+Female,Asian or Pacific Islander,2006,"21,325","7,798,682",273.4
+Female,Asian or Pacific Islander,2007,"21,786","8,084,884",269.5
+Female,Asian or Pacific Islander,2008,"23,195","8,373,542",277.0
+Female,Asian or Pacific Islander,2009,"23,665","8,651,166",273.5
+Female,Asian or Pacific Islander,2010,"24,562","8,858,835",277.3
+Female,Asian or Pacific Islander,2011,"25,846","9,105,690",283.8
+Female,Asian or Pacific Islander,2012,"27,533","9,429,528",292.0
+Female,Asian or Pacific Islander,2013,"28,889","9,713,037",297.4
+Female,Asian or Pacific Islander,2014,"29,884","10,113,992",295.5
+Female,Asian or Pacific Islander,2015,"32,574","10,480,265",310.8
+Female,Asian or Pacific Islander,2016,"33,976","10,674,120",318.3
+Female,Black or African American,1999,"139,361","18,978,030",734.3
+Female,Black or African American,2000,"140,642","19,187,280",733.0
+Female,Black or African American,2001,"141,801","19,515,524",726.6
+Female,Black or African American,2002,"143,216","19,770,726",724.4
+Female,Black or African American,2003,"143,278","20,015,421",715.8
+Female,Black or African American,2004,"141,345","20,277,329",697.1
+Female,Black or African American,2005,"143,700","20,551,032",699.2
+Female,Black or African American,2006,"141,369","20,840,468",678.3
+Female,Black or African American,2007,"141,276","21,142,428",668.2
+Female,Black or African American,2008,"141,929","21,446,016",661.8
+Female,Black or African American,2009,"140,384","21,744,516",645.6
+Female,Black or African American,2010,"141,157","21,964,642",642.7
+Female,Black or African American,2011,"143,216","22,260,843",643.4
+Female,Black or African American,2012,"144,636","22,516,951",642.3
+Female,Black or African American,2013,"148,202","22,761,530",651.1
+Female,Black or African American,2014,"151,227","23,068,743",655.5
+Female,Black or African American,2015,"155,402","23,345,129",665.7
+Female,Black or African American,2016,"160,114","23,563,132",679.5
+Female,White,1999,"1,056,013","115,991,916",910.4
+Female,White,2000,"1,064,096","116,640,724",912.3
+Female,White,2001,"1,068,473","117,610,067",908.5
+Female,White,2002,"1,077,393","118,338,604",910.4
+Female,White,2003,"1,078,064","119,049,621",905.6
+Female,White,2004,"1,049,377","119,757,684",876.3
+Female,White,2005,"1,069,945","120,479,718",888.1
+Female,White,2006,"1,055,221","121,250,204",870.3
+Female,White,2007,"1,050,200","122,027,092",860.6
+Female,White,2008,"1,074,050","122,797,904",874.6
+Female,White,2009,"1,048,880","123,505,997",849.3
+Female,White,2010,"1,063,235","124,019,851",857.3
+Female,White,2011,"1,084,111","124,773,196",868.9
+Female,White,2012,"1,089,928","125,287,474",869.9
+Female,White,2013,"1,106,147","125,785,218",879.4
+Female,White,2014,"1,108,887","126,487,826",876.7
+Female,White,2015,"1,142,685","127,084,866",899.2
+Female,White,2016,"1,141,163","127,504,222",895.0
+Male,American Indian or Alaska Native,1999,"6,092","1,410,781",431.8
+Male,American Indian or Alaska Native,2000,"6,185","1,488,106",415.6
+Male,American Indian or Alaska Native,2001,"6,466","1,545,161",418.5
+Male,American Indian or Alaska Native,2002,"6,750","1,598,182",422.4
+Male,American Indian or Alaska Native,2003,"7,106","1,652,897",429.9
+Male,American Indian or Alaska Native,2004,"7,134","1,712,685",416.5
+Male,American Indian or Alaska Native,2005,"7,607","1,775,711",428.4
+Male,American Indian or Alaska Native,2006,"7,630","1,844,390",413.7
+Male,American Indian or Alaska Native,2007,"7,885","1,917,949",411.1
+Male,American Indian or Alaska Native,2008,"8,163","1,997,376",408.7
+Male,American Indian or Alaska Native,2009,"8,105","2,078,819",389.9
+Male,American Indian or Alaska Native,2010,"8,516","2,142,654",397.5
+Male,American Indian or Alaska Native,2011,"8,638","2,186,044",395.1
+Male,American Indian or Alaska Native,2012,"9,067","2,210,416",410.2
+Male,American Indian or Alaska Native,2013,"9,331","2,240,482",416.5
+Male,American Indian or Alaska Native,2014,"9,829","2,268,973",433.2
+Male,American Indian or Alaska Native,2015,"10,451","2,298,590",454.7
+Male,American Indian or Alaska Native,2016,"10,945","2,323,039",471.2
+Male,Asian or Pacific Islander,1999,"18,330","5,501,127",333.2
+Male,Asian or Pacific Islander,2000,"19,018","5,713,390",332.9
+Male,Asian or Pacific Islander,2001,"19,829","6,029,481",328.9
+Male,Asian or Pacific Islander,2002,"20,483","6,272,748",326.5
+Male,Asian or Pacific Islander,2003,"21,186","6,506,229",325.6
+Male,Asian or Pacific Islander,2004,"21,298","6,741,508",315.9
+Male,Asian or Pacific Islander,2005,"22,808","6,984,291",326.6
+Male,Asian or Pacific Islander,2006,"23,382","7,231,169",323.4
+Male,Asian or Pacific Islander,2007,"23,823","7,474,489",318.7
+Male,Asian or Pacific Islander,2008,"24,708","7,721,157",320.0
+Male,Asian or Pacific Islander,2009,"25,560","7,957,865",321.2
+Male,Asian or Pacific Islander,2010,"26,600","8,134,491",327.0
+Male,Asian or Pacific Islander,2011,"27,490","8,365,668",328.6
+Male,Asian or Pacific Islander,2012,"28,819","8,658,431",332.8
+Male,Asian or Pacific Islander,2013,"30,980","8,917,099",347.4
+Male,Asian or Pacific Islander,2014,"31,686","9,284,222",341.3
+Male,Asian or Pacific Islander,2015,"34,107","9,622,452",354.5
+Male,Asian or Pacific Islander,2016,"35,682","9,813,404",363.6
+Male,Black or African American,1999,"145,703","17,195,091",847.4
+Male,Black or African American,2000,"145,184","17,407,029",834.1
+Male,Black or African American,2001,"145,908","17,734,251",822.7
+Male,Black or African American,2002,"146,835","17,977,698",816.8
+Male,Black or African American,2003,"148,022","18,194,320",813.6
+Male,Black or African American,2004,"145,970","18,461,469",790.7
+Male,Black or African American,2005,"149,108","18,729,699",796.1
+Male,Black or African American,2006,"148,602","19,016,639",781.4
+Male,Black or African American,2007,"148,309","19,308,680",768.1
+Male,Black or African American,2008,"147,143","19,602,943",750.6
+Male,Black or African American,2009,"146,239","19,887,934",735.3
+Male,Black or African American,2010,"145,802","20,100,692",725.4
+Male,Black or African American,2011,"146,884","20,417,972",719.4
+Male,Black or African American,2012,"150,586","20,686,141",728.0
+Male,Black or African American,2013,"154,767","20,934,741",739.3
+Male,Black or African American,2014,"157,733","21,240,651",742.6
+Male,Black or African American,2015,"164,670","21,518,067",765.3
+Male,Black or African American,2016,"171,674","21,743,888",789.5
+Male,White,1999,"1,005,335","112,695,874",892.1
+Male,White,2000,"1,007,191","113,445,038",887.8
+Male,White,2001,"1,011,218","114,582,599",882.5
+Male,White,2002,"1,025,196","115,381,931",888.5
+Male,White,2003,"1,025,650","116,075,451",883.6
+Male,White,2004,"1,007,266","116,912,350",861.6
+Male,White,2005,"1,028,152","117,707,377",873.5
+Male,White,2006,"1,022,328","118,555,067",862.3
+Male,White,2007,"1,023,951","119,363,736",857.8
+Male,White,2008,"1,046,183","120,168,475",870.6
+Male,White,2009,"1,037,475","120,882,836",858.2
+Male,White,2010,"1,051,514","121,403,489",866.1
+Male,White,2011,"1,071,966","122,321,135",876.4
+Male,White,2012,"1,085,250","122,937,079",882.8
+Male,White,2013,"1,110,956","123,559,280",899.1
+Male,White,2014,"1,128,993","124,142,641",909.4
+Male,White,2015,"1,164,176","124,790,188",932.9
+Male,White,2016,"1,181,931","125,198,592",944.0
